@@ -1,0 +1,23 @@
+.logoWithText::before {
+	background-image: url('../logowithtext.svg');
+	content: '';
+	display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 170px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.logo::before {
+	background-image: url('../logo.svg');
+	content: '';
+	display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}

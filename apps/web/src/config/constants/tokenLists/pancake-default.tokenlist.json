@@ -1,0 +1,40 @@
+{
+  "name": "ByteSwap Extended",
+  "timestamp": "2024-04-20T06:55:13.130Z",
+  "version": {
+    "major": 2,
+    "minor": 16,
+    "patch": 1
+  },
+  "logoURI": "https://asset.byteswap.finance/web/chains/1919.png",
+  "keywords": [
+    "byteSwap",
+    "extended"
+  ],
+  "tokens": [
+    {
+      "name": "ByteSwap Token",
+      "symbol": "JIM",
+      "address": "0x245AaFE758Dd4068A899F201155EE2728E4F571A",
+      "chainId": 1919,
+      "decimals": 18,
+      "logoURI": "https://asset.byteswap.finance/images/byteTestnet/0x245AaFE758Dd4068A899F201155EE2728E4F571A.png"
+    },
+    {
+      "name": "Tether USD",
+      "symbol": "USDT",
+      "address": "0x44590967ffBFFb53bbd773574578cCAbA6c0082a",
+      "chainId": 1919,
+      "decimals": 18,
+      "logoURI": "https://asset.byteswap.finance/images/byteTestnet/0x44590967ffBFFb53bbd773574578cCAbA6c0082a.png"
+    },
+    {
+      "name": "ByteX Coin",
+      "symbol": "WBEXC",
+      "address": "0x0e2dE4cafE26105bE7C9A8748D8588e6E7DD0147",
+      "chainId": 1919,
+      "decimals": 18,
+      "logoURI": "https://asset.byteswap.finance/images/byteTestnet/0x0e2dE4cafE26105bE7C9A8748D8588e6E7DD0147.png"
+    }
+  ]
+}
