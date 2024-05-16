@@ -2,7 +2,7 @@ import { WETH9, ERC20Token } from '@pancakeswap/sdk'
 import { ChainId } from '@pancakeswap/chains'
 import { USDT, CAKE } from './common'
 
-export const byteTestnetTokens = {
+export const sepoliaTokens = {
   weth: WETH9[ChainId.SEPOLIA],
   usdt: USDT[ChainId.SEPOLIA],
   cake: CAKE[ChainId.SEPOLIA],

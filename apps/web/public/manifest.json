@@ -1,7 +1,7 @@
 {
-  "short_name": "ByteSwap",
-  "name": "ByteSwap",
-  "description": "Farm BYTE with ByteSwapLP Tokens",
+  "short_name": "DragonSwap",
+  "name": "DragonSwap",
+  "description": "Farm BYTE with DragonSwapLP Tokens",
   "homepage_url": "https://pancakeswap.finance",
   "start_url": ".",
   "display": "standalone",

@@ -4,7 +4,7 @@ import { PageMeta } from './types'
 import { ASSET_CDN, HERO_CDN } from './endpoints'
 
 export const DEFAULT_META: PageMeta = {
-  title: 'ByteSwap',
+  title: 'DragonSwap',
   description:
     'The most popular AMM by user count! Earn ETH through yield farming, then stake it in Pools to earn more tokens!',
   image: `${HERO_CDN}/hero.png`,

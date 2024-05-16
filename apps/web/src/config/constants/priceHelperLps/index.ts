@@ -14,7 +14,7 @@ import PoolsLineaPriceHelper from './pools/59144'
 import PoolsLineaTestnetPriceHelper from './pools/59140'
 import PoolsPolygonZkEvmPriceHelper from './pools/1101'
 import PoolsPolygonZkEvmTestnetPriceHelper from './pools/1442'
-import PoolsByteTestnetPriceHelper from './pools/11155111'
+import PoolsSepoliaPriceHelper from './pools/11155111'
 
 export { getFarmsPriceHelperLpFiles }
 
@@ -49,7 +49,7 @@ export const getPoolsPriceHelperLpFiles = (chainId: ChainId) => {
     case ChainId.POLYGON_ZKEVM_TESTNET:
       return PoolsPolygonZkEvmTestnetPriceHelper
     case ChainId.SEPOLIA:
-      return PoolsByteTestnetPriceHelper
+      return PoolsSepoliaPriceHelper
     default:
       return []
   }

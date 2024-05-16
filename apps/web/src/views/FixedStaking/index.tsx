@@ -7,10 +7,10 @@ import { useMemo, useState } from 'react'
 import min from 'lodash/min'
 import max from 'lodash/max'
 import BigNumber from 'bignumber.js'
-import { bscTokens, byteTestnetTokens } from '@pancakeswap/tokens'
+import { bscTokens, sepoliaTokens } from '@pancakeswap/tokens'
 import partition from 'lodash/partition'
 import { Address } from 'viem'
-import { byteTestnet } from 'config/chains'
+import { sepolia } from 'config/chains'
 
 import { useStakedPools, useStakedPositionsByUser } from './hooks/useStakedPools'
 import { FixedStakingCard } from './components/FixedStakingCard'
@@ -92,7 +92,7 @@ const FixedStaking = () => {
   // Put WBNB on top
   const sortedPoolGroup = useMemo(() => {
     const [first, last] = partition(Object.keys(poolGroup), (poolAddress) =>
-      [byteTestnetTokens.cake.address, byteTestnetTokens.usdt.address].includes(poolAddress as Address),
+      [sepoliaTokens.cake.address, sepoliaTokens.usdt.address].includes(poolAddress as Address),
     )
 
     return [...first, ...last]

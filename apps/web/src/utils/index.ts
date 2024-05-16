@@ -3,7 +3,7 @@ import { Currency } from '@pancakeswap/sdk'
 import { ChainId } from '@pancakeswap/chains'
 import memoize from 'lodash/memoize'
 import { TokenAddressMap } from '@pancakeswap/token-lists'
-import { byteTestnet } from 'config/chains'
+import { sepolia } from 'config/chains'
 import { bsc } from 'wagmi/chains'
 import { chains } from './wagmi'
 
@@ -27,7 +27,7 @@ export function getBlockExploreLink(
 ): string {
   const chainId = chainIdOverride || ChainId.SEPOLIA
   const chain = chains.find((c) => c.id === chainId)
-  if (!chain) return byteTestnet.blockExplorers.default.url
+  if (!chain) return sepolia.blockExplorers.default.url
   switch (type) {
     case 'transaction': {
       return `${chain.blockExplorers.default.url}/tx/${data}`

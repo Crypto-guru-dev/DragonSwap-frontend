@@ -25,7 +25,7 @@ import { chains } from 'utils/wagmi'
 import { ChainLogo } from 'components/Logo/ChainLogo'
 import { arbitrum, bsc, mainnet, polygonZkEvm, zkSync, linea, base, opBNB } from 'wagmi/chains'
 import { ASSET_CDN } from 'config/constants/endpoints'
-import { byteTestnet } from 'config/chains'
+import { sepolia } from 'config/chains'
 
 const NavWrapper = styled(Flex)`
   background: ${({ theme }) => theme.colors.background};
@@ -98,7 +98,7 @@ const InfoNav: React.FC<{ isStableSwap: boolean }> = ({ isStableSwap }) => {
   )
 }
 
-const targetChains = [bsc, byteTestnet]
+const targetChains = [bsc, sepolia]
 // const targetChains = [mainnet, bsc, polygonZkEvm, zkSync, arbitrum, linea, base, opBNB]
 
 export const NetworkSwitcher: React.FC<{ activeIndex: number }> = ({ activeIndex }) => {

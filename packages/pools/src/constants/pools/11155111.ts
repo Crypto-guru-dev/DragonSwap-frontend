@@ -1,4 +1,4 @@
-import { byteTestnetTokens } from '@pancakeswap/tokens'
+import { sepoliaTokens } from '@pancakeswap/tokens'
 import { getAddress } from 'viem'
 
 import { PoolCategory, SerializedPool } from '../../types'
@@ -6,8 +6,8 @@ import { PoolCategory, SerializedPool } from '../../types'
 export const livePools: SerializedPool[] = [
   // {
   //   sousId: 1,
-  //   stakingToken: byteTestnetTokens.cake,
-  //   earningToken: byteTestnetTokens.usdt,
+  //   stakingToken: sepoliaTokens.cake,
+  //   earningToken: sepoliaTokens.usdt,
   //   contractAddress: '0xAA7E271dDC1C516eE2FDe75868342e943bfD451A',
   //   poolCategory: PoolCategory.CORE,
   //   tokenPerBlock: '0.000001',
@@ -15,8 +15,8 @@ export const livePools: SerializedPool[] = [
   // },
   {
     sousId: 2,
-    stakingToken: byteTestnetTokens.cake,
-    earningToken: byteTestnetTokens.usdt,
+    stakingToken: sepoliaTokens.cake,
+    earningToken: sepoliaTokens.usdt,
     contractAddress: '0xf3ac195Cc4414C627b146aEc4e234314d23773c6',
     poolCategory: PoolCategory.CORE,
     tokenPerBlock: '0.00001',

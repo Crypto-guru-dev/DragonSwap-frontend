@@ -360,7 +360,7 @@ export const useChainNameByQuery = (): MultiChainName => {
       //   return 'BASE'
       // case 'opbnb':
       //   return 'OPBNB'
-      case 'byteTestnet':
+      case 'sepolia':
         return 'SEPOLIA'
       default:
         return 'SEPOLIA'

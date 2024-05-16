@@ -6,7 +6,7 @@ import { getAddress } from "viem";
 
 const mapping: { [key: number]: string } = {
   [ChainId.BSC]: "smartchain",
-  [ChainId.SEPOLIA]: "byteTestnet",
+  [ChainId.SEPOLIA]: "sepolia",
   [ChainId.ETHEREUM]: "ethereum",
   [ChainId.POLYGON_ZKEVM]: "polygonzkevm",
   [ChainId.ARBITRUM_ONE]: "arbitrum",
@@ -49,7 +49,7 @@ const chainName: { [key: number]: string } = {
   [ChainId.LINEA]: "linea",
   [ChainId.BASE]: "base",
   [ChainId.OPBNB]: "opbnb",
-  [ChainId.SEPOLIA]: "byteTestnet",
+  [ChainId.SEPOLIA]: "sepolia",
 };
 
 // TODO: move to utils or token-list

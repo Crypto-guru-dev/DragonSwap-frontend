@@ -1,24 +1,24 @@
-import { byteTestnetTokens } from '@pancakeswap/tokens'
+import { sepoliaTokens } from '@pancakeswap/tokens'
 import { FeeAmount } from '@pancakeswap/v3-sdk'
 import { getAddress } from 'viem'
 import { SerializedFarmConfig } from '..'
 import { defineFarmV3Configs } from '../src/defineFarmV3Configs'
 
 export const farmsV3 = defineFarmV3Configs([
-  {
-    pid: 1,
-    lpAddress: '0x3786EE46153FB0F973346382dbBaDA48aCB50b5c',
-    token0: byteTestnetTokens.usdt,
-    token1: byteTestnetTokens.weth,
-    feeAmount: FeeAmount.LOW,
-  },
-  {
-    pid: 3,
-    lpAddress: '0xB90fB296359d19D12b2E689b45C7aa849e5929de',
-    token0: byteTestnetTokens.usdt,
-    token1: byteTestnetTokens.cake,
-    feeAmount: FeeAmount.LOW,
-  },
+  // {
+  //   pid: 1,
+  //   lpAddress: '0x3786EE46153FB0F973346382dbBaDA48aCB50b5c',
+  //   token0: sepoliaTokens.usdt,
+  //   token1: sepoliaTokens.weth,
+  //   feeAmount: FeeAmount.LOW,
+  // },
+  // {
+  //   pid: 3,
+  //   lpAddress: '0xB90fB296359d19D12b2E689b45C7aa849e5929de',
+  //   token0: sepoliaTokens.usdt,
+  //   token1: sepoliaTokens.cake,
+  //   feeAmount: FeeAmount.LOW,
+  // },
   // {
   //   pid: 2,
   //   lpAddress: '0xe62C422c1E8083CE3b4526Ff0b16388354AB6E64',
@@ -70,16 +70,16 @@ const farms: SerializedFarmConfig[] = [
   {
     pid: 0,
     lpSymbol: 'USDT-DRX LP',
-    lpAddress: '0x1A250E13D07695Fc92aB68aa1fAB2BA86D516Ae1',
-    token: byteTestnetTokens.usdt,
-    quoteToken: byteTestnetTokens.cake,
+    lpAddress: '0x40b89CA164CCefC498c8466cB0B49A614c8e7ED8',
+    token: sepoliaTokens.usdt,
+    quoteToken: sepoliaTokens.cake,
   },
   // {
   //   pid: 2,
   //   lpSymbol: 'USDT-BEXC LP',
   //   lpAddress: '0xDea03d402F36e5cEca332ACdcD34a7d4793549B6',
-  //   token: byteTestnetTokens.usdt,
-  //   quoteToken: byteTestnetTokens.weth,
+  //   token: sepoliaTokens.usdt,
+  //   quoteToken: sepoliaTokens.weth,
   // },
   // {
   //   pid: 4,

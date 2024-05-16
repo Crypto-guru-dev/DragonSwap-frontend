@@ -42,7 +42,7 @@ export async function farmV3FetchFarms({
     provider({ chainId: ChainId.SEPOLIA })
       .readContract({
         abi: chainlinkAbi,
-        address: '0xb52D862A2101e7b2026d52c273F3AAF1209afe7F',
+        address: '0x36dce3FC47bD66Cf55750d6773867B31155520bA',
         functionName: 'latestAnswer',
       })
       .then((res) => formatUnits(res, 8)),

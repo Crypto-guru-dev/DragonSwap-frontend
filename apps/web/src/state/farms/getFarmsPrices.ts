@@ -22,7 +22,7 @@ export const nativeStableLpMap = {
     stable: 'BUSD',
   },
   [ChainId.SEPOLIA]: {
-    address: '0xDea03d402F36e5cEca332ACdcD34a7d4793549B6',
+    address: '0x50Ebff20a6DDe8314CBe2dba76c5CDeB0eb6089E',
     wNative: 'WETH',
     stable: 'USDT',
   },

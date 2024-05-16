@@ -1,4 +1,4 @@
-import { byteTestnetTokens } from '@pancakeswap/tokens'
+import { sepoliaTokens } from '@pancakeswap/tokens'
 import { getAddress } from 'viem'
 import { SerializedFarmConfig } from '../..'
 
@@ -6,16 +6,16 @@ const priceHelperLps: SerializedFarmConfig[] = [
   {
     pid: 0,
     lpSymbol: 'DRX-USDT LP',
-    lpAddress: '0x1A250E13D07695Fc92aB68aa1fAB2BA86D516Ae1',
-    quoteToken: byteTestnetTokens.usdt,
-    token: byteTestnetTokens.cake,
+    lpAddress: '0x40b89CA164CCefC498c8466cB0B49A614c8e7ED8',
+    quoteToken: sepoliaTokens.usdt,
+    token: sepoliaTokens.cake,
   },
   {
     pid: 2,
-    lpSymbol: 'BEXC-USDT LP',
-    lpAddress: '0xDea03d402F36e5cEca332ACdcD34a7d4793549B6',
-    quoteToken: byteTestnetTokens.usdt,
-    token: byteTestnetTokens.weth,
+    lpSymbol: 'ETH-USDT LP',
+    lpAddress: '0x50Ebff20a6DDe8314CBe2dba76c5CDeB0eb6089E',
+    quoteToken: sepoliaTokens.usdt,
+    token: sepoliaTokens.weth,
   },
 ].map((p) => ({
   ...p,

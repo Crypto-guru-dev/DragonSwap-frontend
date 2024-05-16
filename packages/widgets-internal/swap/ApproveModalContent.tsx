@@ -10,7 +10,7 @@ interface ApproveModalContentProps {
 export const ApproveModalContent: React.FC<ApproveModalContentProps> = ({ title, isMM, isBonus }) => {
   const { t } = useTranslation();
   const { targetRef, tooltip, tooltipVisible } = useTooltip(
-    <Text>{t("ByteSwap AMM includes V3 and V2.")}</Text>,
+    <Text>{t("DragonSwap AMM includes V3 and V2.")}</Text>,
     { placement: "top" }
   );
 
@@ -29,7 +29,7 @@ export const ApproveModalContent: React.FC<ApproveModalContentProps> = ({ title,
           <Text fontSize="14px">{t("Swapping thru:")}</Text>
           {isMM ? (
             <Text ml="4px" fontSize="14px">
-              {t("ByteSwap MM")}
+              {t("DragonSwap MM")}
             </Text>
           ) : isBonus ? (
             <Text ml="4px" fontSize="14px">
@@ -38,7 +38,7 @@ export const ApproveModalContent: React.FC<ApproveModalContentProps> = ({ title,
           ) : (
             <>
               <TooltipText ml="4px" fontSize="14px" color="textSubtle" ref={targetRef}>
-                {t("ByteSwap AMM")}
+                {t("DragonSwap AMM")}
               </TooltipText>
               {tooltipVisible && tooltip}
             </>

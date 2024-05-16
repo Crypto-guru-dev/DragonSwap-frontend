@@ -63,7 +63,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <meta
           name="description"
-          content="Cheaper and faster than Uniswap? Discover ByteSwap."
+          content="Cheaper and faster than Uniswap? Discover DragonSwap."
         />
         <meta name="theme-color" content="#1FC7D4" />
         <meta name="twitter:image" content="https://assets.ryuswap.com/hero.png" />
@@ -72,8 +72,8 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="The most popular AMM by user count! Earn ETH through yield farming, then stake it in Pools to earn more tokens!"
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content=" ByteSwap - A next evolution DeFi exchange" />
-        <title>Exchange | ByteSwap</title>
+        <meta name="twitter:title" content=" DragonSwap - A next evolution DeFi exchange" />
+        <title>Exchange | DragonSwap</title>
       </Head>
       <NextThemeProvider>
         <StyledThemeProvider>

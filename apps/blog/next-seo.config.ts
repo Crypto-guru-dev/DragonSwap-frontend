@@ -10,7 +10,7 @@ export const SEO: DefaultSeoProps = {
     site: '@PancakeSwap',
   },
   openGraph: {
-    title: "ByteSwap - Everyone's Favorite DEX",
+    title: "DragonSwap - Everyone's Favorite DEX",
     description: 'The most popular AMM by user count! Earn ETH through yield farming, then stake it in Pools to earn more tokens!',
     images: [{ url: 'https://assets.ryuswap.com/hero.png' }],
   },

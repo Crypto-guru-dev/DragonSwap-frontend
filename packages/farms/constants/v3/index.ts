@@ -15,7 +15,7 @@ import { farmsV3 as polygonZkEVMFarms } from '../polygonZkEVM'
 import { farmsV3 as polygonZkEVMTestnetFarms } from '../polygonZkEVMTestnet'
 import { farmsV3 as zkSyncFarms } from '../zkSync'
 import { farmsV3 as zkSyncTestnetFarms } from '../zkSyncTestnet'
-import { farmsV3 as byteTestnetFarms } from '../byteTestnet'
+import { farmsV3 as sepoliaFarms } from '../sepolia'
 
 export const farmsV3ConfigChainMap: Record<FarmV3SupportedChainId, ComputedFarmConfigV3[]> = {
   [ChainId.ETHEREUM]: ethFarms,
@@ -31,7 +31,7 @@ export const farmsV3ConfigChainMap: Record<FarmV3SupportedChainId, ComputedFarmC
   [ChainId.BASE]: baseFarms,
   [ChainId.OPBNB_TESTNET]: opBnbTestnetFarms,
   [ChainId.OPBNB]: opBNBFarms,
-  [ChainId.SEPOLIA]: byteTestnetFarms,
+  [ChainId.SEPOLIA]: sepoliaFarms,
 }
 
 export type Addresses = {

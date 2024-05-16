@@ -187,7 +187,7 @@ const chainlinkAbi = [
 ] as const
 
 export async function fetchCakePrice() {
-  const address = '0xb52D862A2101e7b2026d52c273F3AAF1209afe7F'
+  const address = '0x36dce3FC47bD66Cf55750d6773867B31155520bA'
   const latestAnswer = await bscClient.readContract({
     abi: chainlinkAbi,
     address,

@@ -91,28 +91,28 @@ export const socials = [
   {
     label: "Telegram",
     icon: TelegramIcon,
-    href: "https://t.me/bytedexglobal",
+    href: "https://t.me/",
     
   },
   {
     label: "Twitter",
     icon: TwitterIcon,
-    href: "https://x.com/byteexchange",
+    href: "https://x.com/",
   },
   {
     label: "Discord",
     icon: DiscordIcon,
-    href: "https://discord.gg/DcbBFChX",
+    href: "https://discord.gg/",
   },
   {
     label: "Instagram",
     icon: InstagramIcon,
-    href: "https://instagram.com/byteexchange",
+    href: "https://instagram.com/",
     items: [
       {
         label: "",
         icon: InstagramIcon,
-        href: "https://instagram.com/byteexchange",
+        href: "https://instagram.com/",
       }
     ]
   },

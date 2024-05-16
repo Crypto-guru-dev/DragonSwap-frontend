@@ -94,7 +94,7 @@ const config: (
     },
     {
       label: t('Doc'),
-      href: 'https://ryuswap-help.gitbook.io/ryuswap-document',
+      href: '#',
       icon: EarnIcon,
       fillIcon: EarnFillIcon,
       image: '/images/decorations/pe2.png',
@@ -102,7 +102,7 @@ const config: (
     },
     {
       label: t('Blog'),
-      href: 'https://kupr.io/',
+      href: '#',
       icon: EarnIcon,
       fillIcon: EarnFillIcon,
       image: '/images/decorations/pe2.png',
@@ -110,7 +110,7 @@ const config: (
     },
     {
       label: t('FAQ'),
-      href: 'https://ryuswap-help.gitbook.io/ryuswap-document/faq',
+      href: '#',
       icon: EarnIcon,
       fillIcon: EarnFillIcon,
       image: '/images/decorations/pe2.png',

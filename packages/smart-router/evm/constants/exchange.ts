@@ -20,7 +20,7 @@ import {
   opBnbTokens,
   opBnbTestnetTokens,
   scrollSepoliaTokens,
-  byteTestnetTokens,
+  sepoliaTokens,
   lineaTokens,
 } from '@pancakeswap/tokens'
 
@@ -44,7 +44,7 @@ export const SMART_ROUTER_ADDRESSES = {
   [ChainId.BASE]: '0x678Aa4bF4E210cf2166753e054d5b7c31cc7fa86',
   [ChainId.BASE_TESTNET]: '0xDDC44b8507B4Ca992fB60F0ECdF5651A87668509',
   [ChainId.SCROLL_SEPOLIA]: '0xDDC44b8507B4Ca992fB60F0ECdF5651A87668509',
-  [ChainId.SEPOLIA]: '0x208B70418e6455201c329776C0760766F264B6a3',
+  [ChainId.SEPOLIA]: '0x0167B8092C5dc2Aecc59ECA28e26B1A9D2F232F2',
 } as const satisfies Record<ChainId, string>
 
 export const V2_ROUTER_ADDRESS: ChainMap<string> = {
@@ -116,7 +116,7 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   [ChainId.BASE]: [baseTokens.usdc, baseTokens.weth],
   [ChainId.BASE_TESTNET]: [baseTestnetTokens.usdc, baseTestnetTokens.weth],
   [ChainId.SCROLL_SEPOLIA]: [scrollSepoliaTokens.usdc, scrollSepoliaTokens.weth],
-  [ChainId.SEPOLIA]: [byteTestnetTokens.usdt, byteTestnetTokens.weth],
+  [ChainId.SEPOLIA]: [sepoliaTokens.usdt, sepoliaTokens.weth],
 }
 
 const czusd = new ERC20Token(ChainId.BSC, '0xE68b79e51bf826534Ff37AA9CeE71a3842ee9c70', 18, 'CZUSD', 'CZUSD')

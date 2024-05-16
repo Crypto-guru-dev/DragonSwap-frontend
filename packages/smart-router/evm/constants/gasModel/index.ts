@@ -18,7 +18,7 @@ import {
   opBnbTokens,
   opBnbTestnetTokens,
   scrollSepoliaTokens,
-  byteTestnetTokens,
+  sepoliaTokens,
 } from '@pancakeswap/tokens'
 
 export const usdGasTokensByChain = {
@@ -39,7 +39,7 @@ export const usdGasTokensByChain = {
   [ChainId.BASE]: [baseTokens.usdc],
   [ChainId.BASE_TESTNET]: [baseTestnetTokens.usdc],
   [ChainId.SCROLL_SEPOLIA]: [scrollSepoliaTokens.usdc],
-  [ChainId.SEPOLIA]: [byteTestnetTokens.usdt],
+  [ChainId.SEPOLIA]: [sepoliaTokens.usdt],
 } satisfies Record<ChainId, Token[]>
 
 export * from './v2'

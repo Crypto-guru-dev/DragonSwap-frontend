@@ -15,7 +15,7 @@ import {
   zkSync,
   zkSyncTestnet,
 } from 'wagmi/chains'
-import { byteTestnet } from './chains'
+import { sepolia } from './chains'
 
 const ARBITRUM_NODES = [
   ...arbitrum.rpcUrls.public.http,

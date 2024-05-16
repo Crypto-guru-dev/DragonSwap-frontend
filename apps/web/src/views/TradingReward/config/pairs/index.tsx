@@ -7,7 +7,7 @@ import { farmsV3 as ethFarm } from '@pancakeswap/farms/constants/eth'
 import { farmsV3 as farm5 } from '@pancakeswap/farms/constants/goerli'
 import { farmsV3 as lineaFarm } from '@pancakeswap/farms/constants/linea'
 import { farmsV3 as opBNBFarms } from '@pancakeswap/farms/constants/opBNB'
-import { farmsV3 as byteTestnetFarm } from '@pancakeswap/farms/constants/byteTestnet'
+import { farmsV3 as sepoliaFarm } from '@pancakeswap/farms/constants/sepolia'
 import { farmsV3 as opBNBTestnetFarms } from '@pancakeswap/farms/constants/opBnbTestnet'
 import { farmsV3 as zkEvmFarm } from '@pancakeswap/farms/constants/polygonZkEVM'
 import { farmsV3 as zkSyncFarm } from '@pancakeswap/farms/constants/zkSync'
@@ -28,5 +28,5 @@ export const tradingRewardPairConfigChainMap: Record<FarmV3SupportedChainId, Com
   [ChainId.BASE]: baseFarm,
   [ChainId.OPBNB_TESTNET]: opBNBTestnetFarms,
   [ChainId.OPBNB]: opBNBFarms,
-  [ChainId.SEPOLIA]: byteTestnetFarm,
+  [ChainId.SEPOLIA]: sepoliaFarm,
 }

@@ -19,7 +19,7 @@ import {
   baseTokens,
   baseTestnetTokens,
   scrollSepoliaTokens,
-  byteTestnetTokens,
+  sepoliaTokens,
   lineaTokens,
 } from '@pancakeswap/tokens'
 import { ChainTokenList } from './types'
@@ -76,7 +76,7 @@ export const SUGGESTED_BASES: ChainTokenList = {
   [ChainId.BASE]: [baseTokens.usdc, baseTokens.weth],
   [ChainId.BASE_TESTNET]: [baseTestnetTokens.usdc, baseTestnetTokens.weth],
   [ChainId.SCROLL_SEPOLIA]: [scrollSepoliaTokens.usdc, scrollSepoliaTokens.weth],
-  [ChainId.SEPOLIA]: [byteTestnetTokens.usdt, byteTestnetTokens.weth],
+  [ChainId.SEPOLIA]: [sepoliaTokens.usdt, sepoliaTokens.weth],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
@@ -98,7 +98,7 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   [ChainId.BASE]: [baseTokens.usdc, baseTokens.weth],
   [ChainId.BASE_TESTNET]: [baseTestnetTokens.usdc, baseTestnetTokens.weth],
   [ChainId.SCROLL_SEPOLIA]: [scrollSepoliaTokens.usdc, scrollSepoliaTokens.weth],
-  [ChainId.SEPOLIA]: [byteTestnetTokens.usdt, byteTestnetTokens.weth],
+  [ChainId.SEPOLIA]: [sepoliaTokens.usdt, sepoliaTokens.weth],
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
@@ -127,7 +127,7 @@ export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } 
   [ChainId.BASE]: [[baseTokens.usdc, baseTokens.weth]],
   [ChainId.BASE_TESTNET]: [[baseTestnetTokens.usdc, baseTestnetTokens.weth]],
   [ChainId.SCROLL_SEPOLIA]: [[scrollSepoliaTokens.usdc, scrollSepoliaTokens.weth]],
-  [ChainId.SEPOLIA]: [[byteTestnetTokens.usdt, byteTestnetTokens.weth]],
+  [ChainId.SEPOLIA]: [[sepoliaTokens.usdt, sepoliaTokens.weth]],
 }
 
 export const BIG_INT_ZERO = 0n

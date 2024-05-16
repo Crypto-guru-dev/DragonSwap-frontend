@@ -22,7 +22,7 @@ import {
   getPoolsConfig,
   isLegacyPool,
 } from '@pancakeswap/pools'
-import { bscTokens, byteTestnetTokens } from '@pancakeswap/tokens'
+import { bscTokens, sepoliaTokens } from '@pancakeswap/tokens'
 import { BIG_ZERO } from '@pancakeswap/utils/bigNumber'
 import { getBalanceNumber } from '@pancakeswap/utils/formatBalance'
 import { getCurrencyUsdPrice } from '@pancakeswap/utils/getCurrencyPrice'
@@ -121,13 +121,13 @@ export const fetchCakePoolUserDataAsync =
       contracts: [
         {
           abi: erc20ABI,
-          address: byteTestnetTokens.cake.address,
+          address: sepoliaTokens.cake.address,
           functionName: 'allowance',
           args: [account as Address, getCakeVaultAddress(chainId)],
         },
         {
           abi: erc20ABI,
-          address: byteTestnetTokens.cake.address,
+          address: sepoliaTokens.cake.address,
           functionName: 'balanceOf',
           args: [account as Address],
         },

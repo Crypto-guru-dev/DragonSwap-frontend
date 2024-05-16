@@ -35,7 +35,7 @@ export const getChainId = memoize((chainName: string) => {
   return CHAIN_QUERY_NAME_TO_ID[chainName.toLowerCase()] ? +CHAIN_QUERY_NAME_TO_ID[chainName.toLowerCase()] : undefined
 })
 
-export const byteTestnet = {
+export const sepolia = {
   id: 11155111,
   name: 'Sepolia Testnet',
   network: 'Sepolia',
@@ -101,5 +101,5 @@ export const L2_CHAIN_IDS: ChainId[] = [
 
 export const CHAINS = [
   // bsc,
-  byteTestnet
+  sepolia
 ]

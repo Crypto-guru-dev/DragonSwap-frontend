@@ -20,7 +20,7 @@ import {
 } from 'config/constants/info'
 import mapValues from 'lodash/mapValues'
 import { arbitrum, base, bsc, linea, mainnet, opBNB, polygonZkEvm, zkSync } from 'wagmi/chains'
-import { byteTestnet } from 'config/chains'
+import { sepolia } from 'config/chains'
 
 export type MultiChainName = 'BSC' | 'ETH' | 'POLYGON_ZKEVM' | 'ZKSYNC' | 'ARB' | 'LINEA' | 'BASE' | 'OPBNB' | 'SEPOLIA'
 
@@ -101,7 +101,7 @@ export const multiChainPaths = {
   [ChainId.LINEA]: '/linea',
   [ChainId.BASE]: '/base',
   [ChainId.OPBNB]: '/opbnb',
-  [ChainId.SEPOLIA]: '/byteTestnet',
+  [ChainId.SEPOLIA]: '/sepolia',
 }
 
 export const multiChainQueryClient = {
@@ -134,7 +134,7 @@ export const multiChainScan: Record<MultiChainName, string> = {
   LINEA: linea.blockExplorers.default.name,
   BASE: base.blockExplorers.default.name,
   OPBNB: opBNB.blockExplorers.default.name,
-  SEPOLIA: byteTestnet.blockExplorers.default.name,
+  SEPOLIA: sepolia.blockExplorers.default.name,
 }
 
 export const multiChainTokenBlackList: Record<MultiChainName, string[]> = mapValues(

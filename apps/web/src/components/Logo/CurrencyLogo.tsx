@@ -59,5 +59,5 @@ export default function CurrencyLogo({ currency, size = '24px', style }: LogoPro
     )
   }
 
-  return <StyledLogo size={size} srcs={[`${ASSET_CDN}/images/${currency?.chainId === undefined ? 'byteTestnet' : chainNames[currency?.chainId]}/${currency?.isToken && currency?.address}.png`]} alt={`${currency?.symbol ?? 'token'} logo`} style={style} />
+  return <StyledLogo size={size} srcs={[`${ASSET_CDN}/images/${currency?.chainId === undefined ? 'sepolia' : chainNames[currency?.chainId]}/${currency?.isToken && currency?.address}.png`]} alt={`${currency?.symbol ?? 'token'} logo`} style={style} />
 }

@@ -338,7 +338,7 @@ function RoutingSettings() {
           <PreTitle mb="24px">{t('Liquidity source')}</PreTitle>
           <Flex justifyContent="space-between" alignItems="center" mb="24px">
             <Flex alignItems="center">
-              <Text>ByteSwap V3</Text>
+              <Text>DragonSwap V3</Text>
               <QuestionHelper
                 text={
                   <Flex>
@@ -362,7 +362,7 @@ function RoutingSettings() {
           </Flex>
           <Flex justifyContent="space-between" alignItems="center" mb="24px">
             <Flex alignItems="center">
-              <Text>ByteSwap V2</Text>
+              <Text>DragonSwap V2</Text>
               <QuestionHelper
                 text={
                   <Flex flexDirection="column">

@@ -1,6 +1,6 @@
 module.exports = {
     apps : [{
-      name   : "Byteswap",
+      name   : "DragonSwap",
       script : "pnpm run start"
     }]
   }

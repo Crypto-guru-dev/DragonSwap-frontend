@@ -12,7 +12,7 @@ import {
   polygonZkEvmTokens,
   zkSyncTestnetTokens,
   zksyncTokens,
-  byteTestnetTokens
+  sepoliaTokens
 } from '@pancakeswap/tokens'
 import type { FarmV3SupportedChainId } from '../../src'
 import type { CommonPrice } from '../../src/fetchFarmsV3'
@@ -58,8 +58,8 @@ export const priceHelperTokens = {
     list: [opBnbTokens.wbnb, opBnbTokens.usdt],
   },
   [ChainId.SEPOLIA]: {
-    chain: 'byteTestnet',
-    list: [byteTestnetTokens.weth, byteTestnetTokens.usdt],
+    chain: 'sepolia',
+    list: [sepoliaTokens.weth, sepoliaTokens.usdt],
   },
 } satisfies Record<number, PriceHelper>
 
@@ -88,6 +88,6 @@ export const DEFAULT_COMMON_PRICE: Record<FarmV3SupportedChainId, CommonPrice> =
   [ChainId.OPBNB_TESTNET]: {},
   [ChainId.OPBNB]: {},
   [ChainId.SEPOLIA]: {
-    [byteTestnetTokens.usdt.address]: '1',
+    [sepoliaTokens.usdt.address]: '1',
   },
 }

@@ -6,7 +6,7 @@ import FarmsGoerliPriceHelper from './5'
 import FarmsArbitrumHelper from './42161'
 import FarmsLineaHelper from './59144'
 import FarmsBaseHelper from './8453'
-import FarmsByteTestnetHelper from './11155111'
+import FarmsSepoliaHelper from './11155111'
 
 export const getFarmsPriceHelperLpFiles = (chainId: ChainId) => {
   switch (chainId) {
@@ -25,7 +25,7 @@ export const getFarmsPriceHelperLpFiles = (chainId: ChainId) => {
     case ChainId.BASE:
       return FarmsBaseHelper
     case ChainId.SEPOLIA:
-      return FarmsByteTestnetHelper
+      return FarmsSepoliaHelper
     default:
       return []
   }

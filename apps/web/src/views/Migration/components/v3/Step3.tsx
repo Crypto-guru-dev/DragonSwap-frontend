@@ -4,7 +4,7 @@ import { Chart } from '@pancakeswap/widgets-internal'
 import { format } from 'd3'
 import { useTranslation } from '@pancakeswap/localization'
 import { ChainId } from '@pancakeswap/chains'
-import { bscTokens, byteTestnetTokens, ethereumTokens } from '@pancakeswap/tokens'
+import { bscTokens, sepoliaTokens, ethereumTokens } from '@pancakeswap/tokens'
 import { FeeAmount } from '@pancakeswap/v3-sdk'
 import { LightCard } from 'components/Card'
 import { Bound } from 'config/constants/types'
@@ -44,7 +44,7 @@ const feeAmount = FeeAmount.MEDIUM
 
 const MOCK_TOKENS = {
   [ChainId.BSC]: [bscTokens.cake, bscTokens.wbnb],
-  [ChainId.SEPOLIA]: [byteTestnetTokens.cake, byteTestnetTokens.weth],
+  [ChainId.SEPOLIA]: [sepoliaTokens.cake, sepoliaTokens.weth],
   [ChainId.ETHEREUM]: [ethereumTokens.wbtc, ethereumTokens.weth],
 }
 
