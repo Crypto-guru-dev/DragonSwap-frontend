@@ -29,14 +29,14 @@ export const bCakeFarmBoosterABI = [
   },
   {
     inputs: [],
-    name: 'JIM',
+    name: 'DRX',
     outputs: [{ internalType: 'address', name: '', type: 'address' }],
     stateMutability: 'view',
     type: 'function',
   },
   {
     inputs: [],
-    name: 'JIM_POOL',
+    name: 'DRX_POOL',
     outputs: [{ internalType: 'address', name: '', type: 'address' }],
     stateMutability: 'view',
     type: 'function',

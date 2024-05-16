@@ -103,7 +103,7 @@ export const crossFarmingReceiverABI = [
   },
   {
     inputs: [],
-    name: 'JIM',
+    name: 'DRX',
     outputs: [{ internalType: 'address', name: '', type: 'address' }],
     stateMutability: 'view',
     type: 'function',

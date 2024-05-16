@@ -141,7 +141,7 @@ export const DuoTokenVaultCard = memo(function DuoTokenVaultCard({
   const staked0Amount = stakedToken0Amount ? CurrencyAmount.fromRawAmount(currencyA, stakedToken0Amount) : undefined
   const staked1Amount = stakedToken1Amount ? CurrencyAmount.fromRawAmount(currencyB, stakedToken1Amount) : undefined
 
-  const withCakeReward: boolean = useMemo(() => earningToken.symbol === 'JIM', [earningToken])
+  const withCakeReward: boolean = useMemo(() => earningToken.symbol === 'DRX', [earningToken])
 
   return (
     <StyledCard>

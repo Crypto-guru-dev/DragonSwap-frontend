@@ -45,7 +45,7 @@ const BCakeCalculator: React.FC<React.PropsWithChildren<BCakeCalculatorProps>> =
   targetInputBalance,
   earningTokenPrice,
   initialState,
-  stakingTokenSymbol = 'JIM',
+  stakingTokenSymbol = 'DRX',
   lpTokenStakedAmount,
   setBCakeMultiplier,
 }) => {

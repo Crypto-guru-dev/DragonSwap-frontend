@@ -95,7 +95,7 @@ export const CurrentEpoch = () => {
             )}
           >
             <TooltipText fontSize={14} color="textSubtle">
-              {t('JIM rewards')}
+              {t('DRX rewards')}
             </TooltipText>
           </Tooltips>
 

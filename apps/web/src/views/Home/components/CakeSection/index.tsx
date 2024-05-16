@@ -408,7 +408,7 @@ const CakeSection: React.FC = () => {
           fontSize={['32px', null, null, '40px']}
           lineHeight="110%"
         >
-          {t('JIM')}
+          {t('DRX')}
         </Text>
       </Text>
       <Flex justifyContent="center">

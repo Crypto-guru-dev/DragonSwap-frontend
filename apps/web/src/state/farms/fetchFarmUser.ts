@@ -107,7 +107,7 @@ export const fetchFarmUserEarnings = async (
       return {
         abi: masterChefV2ABI,
         address: masterChefAddress,
-        functionName: 'pendingJim',
+        functionName: 'pendingDrx',
         args: [BigInt(farm.pid), userAddress as Address] as const,
       } as const
     }),

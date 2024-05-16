@@ -13,7 +13,7 @@ export const useCakeEmissionPerBlock = (inView?: boolean) => {
     abi: masterChefV2ABI,
     address: masterChefAddress,
     chainId: ChainId.SEPOLIA,
-    functionName: 'jimPerBlockToBurn',
+    functionName: 'drxPerBlockToBurn',
     enabled: inView,
     select: (d) => {
       const burn = formatEther(d)

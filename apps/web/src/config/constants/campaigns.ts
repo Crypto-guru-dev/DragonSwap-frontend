@@ -429,7 +429,7 @@ const campaigns: Campaign[] = [
   {
     id: '512300000',
     type: 'ifo',
-    title: 'JIMPIE',
+    title: 'DRXPIE',
     badge: 'ifo-ckp.svg',
   },
   {

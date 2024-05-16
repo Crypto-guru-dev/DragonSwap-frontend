@@ -11,7 +11,7 @@ export const SUPPORT_BUY_CRYPTO = [
   ChainId.POLYGON_ZKEVM,
   ChainId.LINEA,
   ChainId.BASE,
-  ChainId.SEPOLIA,
+  // ChainId.SEPOLIA,
 ]
 
 export const LIQUID_STAKING_SUPPORTED_CHAINS = [

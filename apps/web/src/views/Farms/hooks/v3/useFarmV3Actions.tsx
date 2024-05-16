@@ -163,7 +163,7 @@ const useFarmV3Actions = ({
       toastSuccess(
         `${t('Harvested')}!`,
         <ToastDescriptionWithTx txHash={resp.transactionHash}>
-          {t('Your %symbol% earnings have been sent to your wallet!', { symbol: 'JIM' })}
+          {t('Your %symbol% earnings have been sent to your wallet!', { symbol: 'DRX' })}
         </ToastDescriptionWithTx>,
       )
       queryClient.invalidateQueries({ queryKey: ['mcv3-harvest'] })
@@ -228,7 +228,7 @@ export function useFarmsV3BatchHarvest() {
         toastSuccess(
           `${t('Harvested')}!`,
           <ToastDescriptionWithTx txHash={resp.transactionHash}>
-            {t('Your %symbol% earnings have been sent to your wallet!', { symbol: 'JIM' })}
+            {t('Your %symbol% earnings have been sent to your wallet!', { symbol: 'DRX' })}
           </ToastDescriptionWithTx>,
         )
         queryClient.invalidateQueries({ queryKey: ['mcv3-harvest'] })

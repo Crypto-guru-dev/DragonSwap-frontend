@@ -94,7 +94,7 @@ const DetailsView: React.FC<React.PropsWithChildren<DetailsViewProps>> = ({
                 )}
           </Text>
           <Text bold m="10px 0">
-            {`${t('JIM locked:')} ${formatNumber(lockedCakeBalance, 0, 2)}`}
+            {`${t('DRX locked:')} ${formatNumber(lockedCakeBalance, 0, 2)}`}
           </Text>
           <Link external href="/pools">
             {t('Go to Pools')}
@@ -211,7 +211,7 @@ const DetailsView: React.FC<React.PropsWithChildren<DetailsViewProps>> = ({
       {Number.isFinite(cakeBnbLpBalance) && (
         <Flex alignItems="center" justifyContent="space-between" mb="4px">
           <Text color="textSubtle" fontSize="16px">
-            {t('JIM BNB LP')}
+            {t('DRX BNB LP')}
           </Text>
           <Text textAlign="right">{formatNumber(cakeBnbLpBalance, 0, 3)}</Text>
         </Flex>

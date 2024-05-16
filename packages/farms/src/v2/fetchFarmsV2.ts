@@ -207,7 +207,7 @@ const masterChefV2Abi = [
   },
   {
     inputs: [{ internalType: 'bool', name: '_isRegular', type: 'bool' }],
-    name: 'jimPerBlock',
+    name: 'drxPerBlock',
     outputs: [{ internalType: 'uint256', name: 'amount', type: 'uint256' }],
     stateMutability: 'view',
     type: 'function',
@@ -301,7 +301,7 @@ export const fetchMasterChefV2Data = async ({
         {
           abi: masterChefV2Abi,
           address: masterChefAddress,
-          functionName: 'jimPerBlock',
+          functionName: 'drxPerBlock',
           args: [true],
         },
       ],

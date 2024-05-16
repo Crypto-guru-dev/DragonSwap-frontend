@@ -52,7 +52,7 @@ const DepositAction: React.FC<React.PropsWithChildren<DepositActionProps>> = ({ 
 
   const { targetRef, tooltip, tooltipVisible } = useTooltip(
     t(
-      'JIM deposit will be diverted to the fixed-term staking pool. Please note that CAKE deposited can ONLY be withdrawn after 10 weeks.',
+      'DRX deposit will be diverted to the fixed-term staking pool. Please note that CAKE deposited can ONLY be withdrawn after 10 weeks.',
     ),
     {
       placement: 'bottom',

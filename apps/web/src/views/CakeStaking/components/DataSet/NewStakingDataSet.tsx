@@ -53,7 +53,7 @@ export const NewStakingDataSet: React.FC<{
           <DataRow
             label={
               <Text fontSize={14} color="textSubtle" textTransform="uppercase">
-                {t('JIM to be locked')}
+                {t('DRX to be locked')}
               </Text>
             }
             value={<ValueText>{cakeAmount}</ValueText>}

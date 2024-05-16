@@ -54,7 +54,7 @@ const Heading = () => {
   return (
     <Flex alignItems="baseline" justifyContent={staking ? 'space-between' : undefined}>
       <Text lineHeight="110%" bold color="secondary" mb="16px" fontSize={['32px', '32px', '64px', '64px']}>
-        {t('JIM Staking')}
+        {t('DRX Staking')}
       </Text>
       {isMobile ? (
         <Link

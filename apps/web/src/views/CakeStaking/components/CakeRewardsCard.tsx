@@ -160,7 +160,7 @@ export const CakeRewardsCard = ({ onDismiss }) => {
 
   return (
     <ModalContainer
-      title={t('JIM Reward / Yield')}
+      title={t('DRX Reward / Yield')}
       style={{ minWidth: '375px', padding: isDesktop ? '24px' : '24px 24px 0 24px' }}
     >
       <AtomBox
@@ -173,7 +173,7 @@ export const CakeRewardsCard = ({ onDismiss }) => {
       >
         <StyledModalHeader headerBorderColor="transparent">
           <ModalTitle>
-            <Heading scale="md">{t('JIM Reward / Yield')}</Heading>
+            <Heading scale="md">{t('DRX Reward / Yield')}</Heading>
           </ModalTitle>
           <ModalCloseButton onDismiss={onDismiss} />
         </StyledModalHeader>
@@ -279,7 +279,7 @@ export const CakeRewardsCard = ({ onDismiss }) => {
                     tooltipComponent={
                       <div>
                         <p>
-                          {t('JIM Pool:')}{' '}
+                          {t('DRX Pool:')}{' '}
                           <Text bold style={{ display: 'inline' }}>
                             {cakePoolAPR.toFixed(2)}%
                           </Text>
@@ -293,7 +293,7 @@ export const CakeRewardsCard = ({ onDismiss }) => {
                         <br />
                         <p>
                           {t(
-                            'JIM Pool APR is calculated based on the voting result and the emission of the veCAKE Pool gauge.',
+                            'DRX Pool APR is calculated based on the voting result and the emission of the veCAKE Pool gauge.',
                           )}
                         </p>
                         <br />

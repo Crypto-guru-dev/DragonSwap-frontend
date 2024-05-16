@@ -53,7 +53,7 @@ export const useCakePoolEmission = () => {
         {
           address: getMasterChefV2Address(client.chain.id),
           abi: masterChefV2ABI,
-          functionName: 'jimRateToSpecialFarm',
+          functionName: 'drxRateToSpecialFarm',
         } as const,
         {
           address: getMasterChefV2Address(client.chain.id),

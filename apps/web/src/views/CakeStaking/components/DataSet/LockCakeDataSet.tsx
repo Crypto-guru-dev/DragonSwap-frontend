@@ -35,7 +35,7 @@ export const LockCakeDataSet = () => {
   return (
     <DataBox gap="8px">
       <DataHeader value={veCakeAmount} />
-      <DataRow label={t('JIM to be locked')} value={amount.toFixed(2)} />
+      <DataRow label={t('DRX to be locked')} value={amount.toFixed(2)} />
       <DataRow
         label={
           <Tooltips

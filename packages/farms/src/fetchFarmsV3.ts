@@ -98,7 +98,7 @@ export async function farmV3FetchFarms({
 const masterchefV3Abi = [
   {
     inputs: [],
-    name: 'latestPeriodJimPerSecond',
+    name: 'latestPeriodDrxPerSecond',
     outputs: [
       {
         internalType: 'uint256',
@@ -151,9 +151,9 @@ export async function fetchMasterChefV3Data({
 }): Promise<{
   poolLength: bigint
   totalAllocPoint: bigint
-  latestPeriodJimPerSecond: bigint
+  latestPeriodDrxPerSecond: bigint
 }> {
-  const [poolLength, totalAllocPoint, latestPeriodJimPerSecond] = await provider({ chainId }).multicall({
+  const [poolLength, totalAllocPoint, latestPeriodDrxPerSecond] = await provider({ chainId }).multicall({
     contracts: [
       {
         address: masterChefAddress,
@@ -168,7 +168,7 @@ export async function fetchMasterChefV3Data({
       {
         address: masterChefAddress,
         abi: masterchefV3Abi,
-        functionName: 'latestPeriodJimPerSecond',
+        functionName: 'latestPeriodDrxPerSecond',
       },
     ],
     allowFailure: false,
@@ -177,7 +177,7 @@ export async function fetchMasterChefV3Data({
   return {
     poolLength,
     totalAllocPoint,
-    latestPeriodJimPerSecond,
+    latestPeriodDrxPerSecond,
   }
 }
 

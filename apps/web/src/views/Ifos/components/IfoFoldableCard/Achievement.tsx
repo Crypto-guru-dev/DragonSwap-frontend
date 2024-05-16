@@ -138,7 +138,7 @@ const IfoAchievement: React.FC<React.PropsWithChildren<Props>> = ({ ifo, publicI
             <Text color="textSubtle" fontSize="12px">
               {t('Commit ~%amount% %symbol% in total to earn!', {
                 amount: minLpForAchievement,
-                symbol: ifo.currency === bscTokens.cake ? 'JIM' : 'LP',
+                symbol: ifo.currency === bscTokens.cake ? 'DRX' : 'LP',
               })}
             </Text>
           ) : (

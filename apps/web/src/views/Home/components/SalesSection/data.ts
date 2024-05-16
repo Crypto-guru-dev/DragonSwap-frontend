@@ -20,7 +20,7 @@ export const swapSectionData = (t: TranslateFunction): SalesSectionProps => ({
     attributes: [
       { src: 'BNB', alt: t('BNB token') },
       { src: 'BTC', alt: t('BTC token') },
-      { src: 'JIM', alt: t('JIM token') },
+      { src: 'DRX', alt: t('DRX token') },
     ],
   },
 })
@@ -50,9 +50,9 @@ export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
 })
 
 export const cakeSectionData = (t: TranslateFunction): SalesSectionProps => ({
-  headingText: t('JIM makes our world go round.'),
+  headingText: t('DRX makes our world go round.'),
   bodyText: t(
-    'JIM token is at the heart of the PancakeSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
+    'DRX token is at the heart of the PancakeSwap ecosystem. Buy it, win it, farm it, spend it, stake it... heck, you can even vote with it!',
   ),
   reverse: false,
   primaryButton: {
@@ -71,7 +71,7 @@ export const cakeSectionData = (t: TranslateFunction): SalesSectionProps => ({
     attributes: [
       { src: 'bottom-right', alt: t('Small 3d pancake') },
       { src: 'top-right', alt: t('Small 3d pancake') },
-      { src: 'coin', alt: t('JIM token') },
+      { src: 'coin', alt: t('DRX token') },
       { src: 'top-left', alt: t('Small 3d pancake') },
     ],
   },

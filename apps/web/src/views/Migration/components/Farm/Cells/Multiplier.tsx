@@ -43,7 +43,7 @@ const Multiplier: React.FC<React.PropsWithChildren<MultiplierProps>> = ({ multip
         )}
       </Text>
       <Text my="24px">
-        {t('For example, if a 1x farm received 1 JIM per block, a 40x farm would receive 40 JIM per block.')}
+        {t('For example, if a 1x farm received 1 DRX per block, a 40x farm would receive 40 DRX per block.')}
       </Text>
       <Text>
         {t(

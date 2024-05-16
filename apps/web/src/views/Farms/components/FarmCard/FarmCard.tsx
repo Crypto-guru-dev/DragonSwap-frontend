@@ -77,7 +77,7 @@ const FarmCard: React.FC<React.PropsWithChildren<FarmCardProps>> = ({
       : ''
 
   const lpLabel = farm.lpSymbol && farm.lpSymbol.replace(/pancake/gi, '')
-  const earnLabel = t('JIM + Fees')
+  const earnLabel = t('DRX + Fees')
 
   const liquidityUrlPathParts = getLiquidityUrlPathParts({
     quoteTokenAddress: farm.quoteToken.address,
@@ -86,7 +86,7 @@ const FarmCard: React.FC<React.PropsWithChildren<FarmCardProps>> = ({
   })
   const addLiquidityUrl = `${BASE_ADD_LIQUIDITY_URL}/v2/${liquidityUrlPathParts}`
   const { lpAddress, stableSwapAddress, stableLpFee } = farm
-  const isPromotedFarm = farm.token.symbol === 'JIM'
+  const isPromotedFarm = farm.token.symbol === 'DRX'
 
   const infoUrl = useMemo(() => {
     if (farm.isStable) {

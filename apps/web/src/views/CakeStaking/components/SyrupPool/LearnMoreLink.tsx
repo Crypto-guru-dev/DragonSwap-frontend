@@ -38,7 +38,7 @@ export const CakeStakingPageLink: React.FC = memo(() => {
       }}
       href="/cake-staking"
     >
-      {t('JIM staking page')}
+      {t('DRX staking page')}
     </Link>
   )
 })

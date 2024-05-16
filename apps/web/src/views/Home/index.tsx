@@ -130,7 +130,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
     //     <CakeSection />
     //     <Flex style={{ gap: 5 }} justifyContent="center" mt="40px">
     //       <Text fontSize={24} bold>
-    //         {t('JIM')}
+    //         {t('DRX')}
     //       </Text>
     //       <Text fontSize={24} bold color="secondary">
     //         {t('Figures')}

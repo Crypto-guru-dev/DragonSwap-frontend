@@ -1,7 +1,7 @@
 export const v3AirdropABI = [
   {
     inputs: [
-      { internalType: 'address', name: 'JIM', type: 'address' },
+      { internalType: 'address', name: 'DRX', type: 'address' },
       { internalType: 'address', name: 'bunnyMintStation', type: 'address' },
     ],
     stateMutability: 'nonpayable',
@@ -39,7 +39,7 @@ export const v3AirdropABI = [
   },
   {
     inputs: [],
-    name: 'JIM',
+    name: 'DRX',
     outputs: [{ internalType: 'contract IERC20', name: '', type: 'address' }],
     stateMutability: 'view',
     type: 'function',

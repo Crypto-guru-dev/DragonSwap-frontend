@@ -151,7 +151,7 @@ const LockedInfo = () => {
             <Message variant="warning" icon={<InfoFilledIcon color="warning" />}>
               <Text as="p">
                 {t(
-                  'JIM Pool migrated position has unlocked. Go to the pool page to withdraw, add CAKE into veCAKE to increase your veCAKE benefits.',
+                  'DRX Pool migrated position has unlocked. Go to the pool page to withdraw, add CAKE into veCAKE to increase your veCAKE benefits.',
                 )}
               </Text>
             </Message>

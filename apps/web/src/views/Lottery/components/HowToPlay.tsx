@@ -324,7 +324,7 @@ const HowToPlay: React.FC<React.PropsWithChildren> = () => {
             </li>
           </BulletList>
           <Heading my="16px" scale="md">
-            {t('JIM Injections')}
+            {t('DRX Injections')}
           </Heading>
           <BulletList>
             <li>
@@ -333,7 +333,7 @@ const HowToPlay: React.FC<React.PropsWithChildren> = () => {
                   'An average total of 35,000 CAKE from the treasury is added to lottery rounds over the course of a week. This CAKE is of course also included in rollovers! Read more in our guide to ',
                 )}
                 <InlineLink href="https://ryuswap-help.gitbook.io/ryuswap-document">
-                  {t('JIM Tokenomics')}
+                  {t('DRX Tokenomics')}
                 </InlineLink>
               </Text>
             </li>

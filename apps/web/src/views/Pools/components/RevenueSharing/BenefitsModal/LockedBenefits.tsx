@@ -80,7 +80,7 @@ const LockedBenefits = () => {
           <Box mt="8px">
             <Flex mt="8px" flexDirection="row" alignItems="center">
               <Text color="textSubtle" fontSize="14px" mr="auto">
-                {t('JIM Yield')}
+                {t('DRX Yield')}
               </Text>
               <Text style={{ display: 'inline-block' }} color="success" bold>
                 {`${Number(lockedApy).toFixed(2)}%`}

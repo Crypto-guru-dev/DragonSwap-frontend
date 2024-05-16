@@ -51,7 +51,7 @@ export function useVaultApy({ duration = MAX_LOCK_DURATION }: { duration?: numbe
         {
           address: masterChefAddress,
           abi: masterChefV2ABI,
-          functionName: 'jimPerBlock',
+          functionName: 'drxPerBlock',
           args: [false],
         },
         {
