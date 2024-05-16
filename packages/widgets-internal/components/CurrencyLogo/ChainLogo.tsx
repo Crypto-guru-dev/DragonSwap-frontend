@@ -14,7 +14,7 @@ export const ChainLogo = memo(
       <Image
         alt={`chain-${chainId}`}
         style={{ maxHeight: `${height}px` }}
-        src={`https://asset.byteswap.finance/web/chains/${chainId}.png`}
+        src={`https://assets.ryuswap.com/web/chains/${chainId}.png`}
         width={width}
         height={height}
         unoptimized

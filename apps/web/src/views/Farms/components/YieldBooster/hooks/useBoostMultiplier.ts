@@ -12,7 +12,7 @@ import { YieldBoosterState } from './useYieldBoosterState'
 const PRECISION_FACTOR = new BN('1000000000000') // 1e12
 
 async function getPublicMultiplier({ farmBoosterContract }): Promise<number> {
-  const [cAResult, caPercisionResult, boostPercisionResult] = await publicClient({ chainId: ChainId.BYTE_TESTNET }).multicall({
+  const [cAResult, caPercisionResult, boostPercisionResult] = await publicClient({ chainId: ChainId.SEPOLIA }).multicall({
     contracts: [
       {
         address: farmBoosterContract.address,
@@ -48,7 +48,7 @@ async function getPublicMultiplier({ farmBoosterContract }): Promise<number> {
 }
 
 async function getUserMultiplier({ farmBoosterContract, account, pid }): Promise<number> {
-  const [multiplierResult, boostPrecisionResult] = await publicClient({ chainId: ChainId.BYTE_TESTNET }).multicall({
+  const [multiplierResult, boostPrecisionResult] = await publicClient({ chainId: ChainId.SEPOLIA }).multicall({
     contracts: [
       {
         address: farmBoosterContract.address,

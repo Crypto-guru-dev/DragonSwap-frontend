@@ -44,7 +44,7 @@ export function useVaultApy({ duration = MAX_LOCK_DURATION }: { duration?: numbe
   const pricePerFullShareAsEtherBN = useMemo(() => new BN(pricePerFullShare.toString()), [pricePerFullShare])
 
   const { data: totalCakePoolEmissionPerYear } = useSWRImmutable('masterChef-total-cake-pool-emission', async () => {
-    const bscClient = publicClient({ chainId: ChainId.BYTE_TESTNET })
+    const bscClient = publicClient({ chainId: ChainId.SEPOLIA })
 
     const [specialFarmsPerBlock, cakePoolInfo, totalSpecialAllocPoint] = await bscClient.multicall({
       contracts: [

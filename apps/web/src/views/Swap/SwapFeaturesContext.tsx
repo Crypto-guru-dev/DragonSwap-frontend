@@ -26,7 +26,7 @@ export const SwapFeaturesContext = createContext<{
 })
 
 const CHART_SUPPORT_CHAIN_IDS = [
-  // ChainId.BYTE_TESTNET,
+  // ChainId.SEPOLIA,
   // ChainId.BSC_TESTNET,
   // ChainId.ETHEREUM
 ]

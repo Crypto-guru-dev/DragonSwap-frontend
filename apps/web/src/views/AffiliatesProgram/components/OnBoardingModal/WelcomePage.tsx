@@ -81,7 +81,7 @@ const WelcomePage: React.FC<React.PropsWithChildren<WelcomePageProps>> = ({ isLo
             <Text fontSize="14px" ml="8px">
               {t('*I have read the')}
               <Text display="inline-block" as="span" ml="4px">
-                <Link external href="https://byteswap-help.gitbook.io/byteswap-document">
+                <Link external href="https://ryuswap-help.gitbook.io/ryuswap-document">
                   {t('terms and conditions')}
                 </Link>
               </Text>

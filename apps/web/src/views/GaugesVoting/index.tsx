@@ -102,7 +102,7 @@ const GaugesVoting = () => {
                     external
                     showExternalIcon
                     color="textSubtle"
-                    href="https://byteswap-help.gitbook.io/byteswap-document"
+                    href="https://ryuswap-help.gitbook.io/ryuswap-document"
                   >
                     {t('Learn More')}
                   </InlineLink>

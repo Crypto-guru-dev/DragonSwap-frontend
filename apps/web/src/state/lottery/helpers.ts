@@ -94,7 +94,7 @@ export const fetchMultipleLotteries = async (lotteryIds: string[]): Promise<Lott
       } as const),
   )
   try {
-    const client = publicClient({ chainId: ChainId.BYTE_TESTNET })
+    const client = publicClient({ chainId: ChainId.SEPOLIA })
     const multicallRes = await client.multicall({
       contracts: calls,
     })
@@ -123,7 +123,7 @@ export const fetchCurrentLotteryIdAndMaxBuy = async () => {
         } as const),
     )
 
-    const client = publicClient({ chainId: ChainId.BYTE_TESTNET })
+    const client = publicClient({ chainId: ChainId.SEPOLIA })
     const [currentLotteryId, maxNumberTicketsPerBuyOrClaim] = await client.multicall({
       contracts: calls,
       allowFailure: false,

@@ -129,7 +129,7 @@ const Step1 = ({
           fontWeight={700}
           color="textSubtle"
           small
-          href="https://byteswap-help.gitbook.io/byteswap-document"
+          href="https://ryuswap-help.gitbook.io/ryuswap-document"
         >
           {t('How does the number of iCAKE calculated?')}
         </Link>

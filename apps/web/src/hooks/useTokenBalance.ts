@@ -8,7 +8,7 @@ import { Address, erc20ABI, useAccount, useBalance, useContractRead } from 'wagm
 import { useActiveChainId } from './useActiveChainId'
 
 const useTokenBalance = (tokenAddress: Address, forceBSC?: boolean) => {
-  return useTokenBalanceByChain(tokenAddress, forceBSC ? ChainId.BYTE_TESTNET : undefined)
+  return useTokenBalanceByChain(tokenAddress, forceBSC ? ChainId.SEPOLIA : undefined)
 }
 
 export const useTokenBalanceByChain = (tokenAddress: Address, chainIdOverride?: ChainId) => {
@@ -35,7 +35,7 @@ export const useTokenBalanceByChain = (tokenAddress: Address, chainIdOverride?: 
 export const useGetBnbBalance = () => {
   const { address: account } = useAccount()
   const { status, refetch, data } = useBalance({
-    chainId: ChainId.BYTE_TESTNET,
+    chainId: ChainId.SEPOLIA,
     address: account,
     watch: true,
     enabled: !!account,
@@ -58,7 +58,7 @@ export const useGetNativeTokenBalance = () => {
 }
 
 export const useBSCCakeBalance = () => {
-  const { balance, fetchStatus } = useTokenBalance(CAKE[ChainId.BYTE_TESTNET]?.address, true)
+  const { balance, fetchStatus } = useTokenBalance(CAKE[ChainId.SEPOLIA]?.address, true)
 
   return { balance: BigInt(balance.toString()), fetchStatus }
 }

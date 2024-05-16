@@ -21,7 +21,7 @@ export const ConnectWalletButton = ({ children, ...props }: ButtonProps) => {
       </Button>
       <WalletModalV2
         docText={t('Learn More')}
-        docLink="https://byteswap-help.gitbook.io/byteswap-document"
+        docLink="https://ryuswap-help.gitbook.io/ryuswap-document"
         isOpen={open}
         wallets={wallets}
         login={login}

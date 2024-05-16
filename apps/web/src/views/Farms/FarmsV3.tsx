@@ -217,7 +217,7 @@ const Farms: React.FC<React.PropsWithChildren> = ({ children }) => {
       ...farmsV3.map((f) => ({ ...f, version: 3 } as V3FarmWithoutStakedValue)),
       ...farmsV2.map((f) => ({ ...f, version: 2 } as V2FarmWithoutStakedValue)),
     ]
-    if (chainId === ChainId.BYTE_TESTNET) {
+    if (chainId === ChainId.SEPOLIA) {
       return farms
     }
     const sableFarm = farms.find((f) => f.version === 2 && f.pid === 167)
@@ -551,7 +551,7 @@ const Farms: React.FC<React.PropsWithChildren> = ({ children }) => {
             </ControlContainer>
             {isInactive && (
               <Box mb="32px">
-                {/* {chainId === ChainId.BYTE_TESTNET && (
+                {/* {chainId === ChainId.SEPOLIA && (
                   <FinishedTextContainer>
                     <Text fontSize={['16px', null, '20px']} color="failure" pr="4px">
                       {t("Don't see the farm you are staking?")}

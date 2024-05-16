@@ -44,7 +44,7 @@ const feeAmount = FeeAmount.MEDIUM
 
 const MOCK_TOKENS = {
   [ChainId.BSC]: [bscTokens.cake, bscTokens.wbnb],
-  [ChainId.BYTE_TESTNET]: [byteTestnetTokens.cake, byteTestnetTokens.weth],
+  [ChainId.SEPOLIA]: [byteTestnetTokens.cake, byteTestnetTokens.weth],
   [ChainId.ETHEREUM]: [ethereumTokens.wbtc, ethereumTokens.weth],
 }
 
@@ -307,7 +307,7 @@ export function Step3() {
         </LightCard>
       </AutoRow>
       <AtomBox p="48px">
-        <LinkExternal m="auto" href="https://byteswap-help.gitbook.io/byteswap-document">
+        <LinkExternal m="auto" href="https://ryuswap-help.gitbook.io/ryuswap-document">
           {t('Learn More')}
         </LinkExternal>
       </AtomBox>

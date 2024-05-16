@@ -6,7 +6,7 @@ import { isAddress } from 'viem'
 
 const mapping = {
   [ChainId.BSC]: 'smartchain',
-  [ChainId.BYTE_TESTNET]: 'byte',
+  [ChainId.SEPOLIA]: 'byte',
   [ChainId.ETHEREUM]: 'ethereum',
   [ChainId.POLYGON_ZKEVM]: 'polygonzkevm',
   [ChainId.ZKSYNC]: 'zksync',
@@ -17,7 +17,7 @@ const mapping = {
 const getTokenLogoURL = memoize(
   (token?: Token) => {
     if (token && mapping[token.chainId] && isAddress(token.address)) {
-      return `https://asset.byteswap.finance/images/${mapping[token.chainId]}/${safeGetAddress(
+      return `https://assets.ryuswap.com/images/${mapping[token.chainId]}/${safeGetAddress(
         token.address,
       )}.png`
     }
@@ -29,7 +29,7 @@ const getTokenLogoURL = memoize(
 export const getTokenLogoURLByAddress = memoize(
   (address?: string, chainId?: number) => {
     if (address && chainId && mapping[chainId] && isAddress(address)) {
-      return `https://asset.byteswap.finance/images/${mapping[chainId]}/${safeGetAddress(
+      return `https://assets.ryuswap.com/images/${mapping[chainId]}/${safeGetAddress(
         address,
       )}.png`
     }

@@ -39,7 +39,7 @@ const CanceledRoundCard: React.FC<React.PropsWithChildren<CanceledRoundCardProps
               {t('Round Cancelled')}
             </Text>
             {isRefundable && <ReclaimPositionButton epoch={epoch} onSuccess={handleSuccess} width="100%" my="8px" />}
-            <LinkExternal href="https://byteswap-help.gitbook.io/byteswap-document" external>
+            <LinkExternal href="https://ryuswap-help.gitbook.io/ryuswap-document" external>
               {t('Learn More')}
             </LinkExternal>
           </Flex>

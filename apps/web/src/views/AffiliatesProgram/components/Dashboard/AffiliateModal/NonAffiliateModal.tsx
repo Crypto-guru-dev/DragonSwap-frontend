@@ -50,7 +50,7 @@ const NonAffiliateModal = () => {
                 <Text display="inline-block" as="span" ml="4px">
                   <Link
                     external
-                    href="https://byteswap-help.gitbook.io/byteswap-document"
+                    href="https://ryuswap-help.gitbook.io/ryuswap-document"
                   >
                     {t('terms and conditions')}
                   </Link>

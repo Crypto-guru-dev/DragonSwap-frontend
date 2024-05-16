@@ -82,10 +82,10 @@ const config: (
           href: '/simple-staking',
           supportChainIds: FIXED_STAKING_SUPPORTED_CHAINS,
         },
-        {
-          label: t('Top Tokens'),
-          href: '/info',
-        },
+        // {
+        //   label: t('Top Tokens'),
+        //   href: '/info',
+        // },
         {
           label: t(''),
           href: '/add',
@@ -94,7 +94,7 @@ const config: (
     },
     {
       label: t('Doc'),
-      href: 'https://byteswap-help.gitbook.io/byteswap-document',
+      href: 'https://ryuswap-help.gitbook.io/ryuswap-document',
       icon: EarnIcon,
       fillIcon: EarnFillIcon,
       image: '/images/decorations/pe2.png',
@@ -110,7 +110,7 @@ const config: (
     },
     {
       label: t('FAQ'),
-      href: 'https://byteswap-help.gitbook.io/byteswap-document/faq',
+      href: 'https://ryuswap-help.gitbook.io/ryuswap-document/faq',
       icon: EarnIcon,
       fillIcon: EarnFillIcon,
       image: '/images/decorations/pe2.png',

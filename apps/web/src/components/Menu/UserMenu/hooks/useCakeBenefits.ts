@@ -17,7 +17,7 @@ import { PANCAKE_SPACE } from 'views/Voting/config'
 import { cakePoolBalanceStrategy, createTotalStrategy } from 'views/Voting/strategies'
 import { publicClient } from 'utils/wagmi'
 
-const bscClient = publicClient({ chainId: ChainId.BYTE_TESTNET })
+const bscClient = publicClient({ chainId: ChainId.SEPOLIA })
 
 const useCakeBenefits = () => {
   const { address: account } = useAccount()
@@ -26,7 +26,7 @@ const useCakeBenefits = () => {
   } = useTranslation()
   const ifoCreditAddressContract = useIfoCreditAddressContract()
   const cakeVaultAddress = getCakeVaultAddress()
-  const currentBscBlock = useChainCurrentBlock(ChainId.BYTE_TESTNET)
+  const currentBscBlock = useChainCurrentBlock(ChainId.SEPOLIA)
 
   const { data, status } = useQuery(
     ['cakeBenefits', account],
@@ -100,13 +100,13 @@ const useCakeBenefits = () => {
         const credit = await ifoCreditAddressContract.read.getUserCredit([account])
         iCake = getBalanceNumber(new BigNumber(credit.toString())).toLocaleString('en', { maximumFractionDigits: 3 })
 
-        const eligiblePools: any = await getActivePools(ChainId.BYTE_TESTNET, currentBscBlock)
+        const eligiblePools: any = await getActivePools(ChainId.SEPOLIA, currentBscBlock)
         const poolAddresses = eligiblePools.map(({ contractAddress }) => contractAddress)
 
         const [cakeVaultBalance, total] = await getScores(
           PANCAKE_SPACE,
           [cakePoolBalanceStrategy('v1'), createTotalStrategy(poolAddresses, 'v1')],
-          ChainId.BYTE_TESTNET.toString(),
+          ChainId.SEPOLIA.toString(),
           [account],
           Number(currentBscBlock),
         )

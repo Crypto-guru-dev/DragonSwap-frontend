@@ -32,7 +32,7 @@ export function useHandleWithdrawSubmission({
       <>
         {t('Please come back to check later at a certain amount of time')}
         <Link
-          href="https://byteswap-help.gitbook.io/byteswap-document"
+          href="https://ryuswap-help.gitbook.io/ryuswap-document"
           target="_blank"
         >
           {t('Learn more')}

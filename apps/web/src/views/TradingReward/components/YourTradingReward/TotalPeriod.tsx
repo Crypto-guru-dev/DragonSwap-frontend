@@ -187,7 +187,7 @@ const TotalPeriod: React.FC<React.PropsWithChildren<TotalPeriodProps>> = ({
                 {t('Claim All')}
               </Button>
             </Flex>
-            {chainId !== ChainId.BYTE_TESTNET && (
+            {chainId !== ChainId.SEPOLIA && (
               <Message variant="warning" mt="16px">
                 <MessageText>
                   <Text m="0 4px" as="span">

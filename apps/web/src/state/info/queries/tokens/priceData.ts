@@ -55,7 +55,7 @@ const fetchTokenPriceData = async (
   try {
     const blocks = await getBlocksFromTimestamps(timestamps, 'asc', 500, chainName)
     const blocksLength = blocks?.length ?? 0
-    if (blocksLength > 0 && chainName === 'BYTE_TESTNET' && !checkIsStableSwap()) {
+    if (blocksLength > 0 && chainName === 'SEPOLIA' && !checkIsStableSwap()) {
       const data = blocks[blocksLength - 1]
       blocks[blocksLength - 1] = { timestamp: data.timestamp, number: data.number - 32 }
       // nodeReal will sync the the 32 block before latest

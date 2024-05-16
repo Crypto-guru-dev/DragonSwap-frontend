@@ -84,10 +84,10 @@ const phoneConfig: (
           label: t('Staking'),
           href: '/simple-staking',
         },
-        {
-          label: t('Top Tokens'),
-          href: '/info',
-        },
+        // {
+        //   label: t('Top Tokens'),
+        //   href: '/info',
+        // },
         {
           label: t(''),
           href: '/add',

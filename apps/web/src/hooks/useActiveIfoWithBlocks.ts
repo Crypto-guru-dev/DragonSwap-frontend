@@ -20,7 +20,7 @@ export const useActiveIfoWithBlocks = (): (Ifo & { startBlock: number; endBlock:
         }
       }
 
-      const bscClient = publicClient({ chainId: ChainId.BYTE_TESTNET })
+      const bscClient = publicClient({ chainId: ChainId.SEPOLIA })
       const [startBlockResponse, endBlockResponse] = await bscClient.multicall({
         contracts: [
           {

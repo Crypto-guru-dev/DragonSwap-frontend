@@ -34,7 +34,7 @@ const BoosterTooltip = () => {
         `Boost multiplier is calculated based on the staking conditions from both Farms and fixed-term CAKE syrup pool and will be automatically updated upon user actions.`,
       )}
       <LinkExternal
-        href="https://byteswap-help.gitbook.io/byteswap-document"
+        href="https://ryuswap-help.gitbook.io/ryuswap-document"
         external
       >
         {t('Learn More')}

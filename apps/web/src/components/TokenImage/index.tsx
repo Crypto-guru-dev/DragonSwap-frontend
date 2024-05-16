@@ -14,7 +14,7 @@ interface TokenPairImageProps extends Omit<UIKitTokenPairImageProps, 'primarySrc
 }
 
 export const tokenImageChainNameMapping = {
-  [ChainId.BYTE_TESTNET]: 'byteTestnet/',
+  [ChainId.SEPOLIA]: 'sepolia/',
   [ChainId.BSC]: '',
   [ChainId.ETHEREUM]: 'eth/',
   [ChainId.POLYGON_ZKEVM]: 'polygon-zkevm/',
@@ -28,9 +28,9 @@ export const tokenImageChainNameMapping = {
 export const getImageUrlFromToken = (token: Token) => {
   const address = token?.isNative ? token.wrapped.address : token.address
 
-  return token?.isNative && token.chainId !== ChainId.BYTE_TESTNET
+  return token?.isNative && token.chainId !== ChainId.SEPOLIA
     ? `${ASSET_CDN}/web/native/${token.chainId}.png`
-    : `https://asset.byteswap.finance/images/${tokenImageChainNameMapping[token.chainId]}${address}.png`
+    : `https://assets.ryuswap.com/images/${tokenImageChainNameMapping[token.chainId]}${address}.png`
 }
 
 export const TokenPairImage: React.FC<React.PropsWithChildren<TokenPairImageProps>> = ({

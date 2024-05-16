@@ -24,7 +24,7 @@ export function getV3Subgraphs({ noderealApiKey }: SubgraphParams) {
   return {
     [ChainId.ETHEREUM]: 'https://api.thegraph.com/subgraphs/name/pancakeswap/exchange-v3-eth',
     [ChainId.GOERLI]: 'https://api.thegraph.com/subgraphs/name/pancakeswap/exchange-v3-goerli',
-    [ChainId.BSC]: 'https://subgraph.bytemx.io/subgraphs/name/byteswap-exchange-v3',
+    [ChainId.BSC]: 'https://subgraph.bytemx.io/subgraphs/name/ryuswap-exchange-v3',
     [ChainId.BSC_TESTNET]: 'https://api.thegraph.com/subgraphs/name/pancakeswap/exchange-v3-chapel',
     [ChainId.ARBITRUM_ONE]: 'https://api.thegraph.com/subgraphs/name/pancakeswap/exchange-v3-arb',
     [ChainId.ARBITRUM_GOERLI]: 'https://api.thegraph.com/subgraphs/name/chef-jojo/exhange-v3-arb-goerli',
@@ -36,7 +36,7 @@ export function getV3Subgraphs({ noderealApiKey }: SubgraphParams) {
     [ChainId.LINEA_TESTNET]:
       'https://thegraph.goerli.zkevm.consensys.net/subgraphs/name/pancakeswap/exchange-v3-linea-goerli',
     [ChainId.BASE]: 'https://api.studio.thegraph.com/query/45376/exchange-v3-base/version/latest',
-    [ChainId.BYTE_TESTNET]: 'https://subgraph.bytemx.io/subgraphs/name/byteswap-exchange-v3',
+    [ChainId.SEPOLIA]: 'https://subgraph.bytemx.io/subgraphs/name/ryuswap-exchange-v3',
     [ChainId.BASE_TESTNET]: 'https://api.studio.thegraph.com/query/45376/exchange-v3-base-testnet/version/latest',
     [ChainId.OPBNB]: `https://open-platform-ap.nodereal.io/${noderealApiKey}/opbnb-mainnet-graph-query/subgraphs/name/pancakeswap/exchange-v3`,
     [ChainId.OPBNB_TESTNET]: null,
@@ -55,15 +55,15 @@ export function getV2Subgraphs({ noderealApiKey }: SubgraphParams) {
     [ChainId.ARBITRUM_ONE]: 'https://api.thegraph.com/subgraphs/name/pancakeswap/exchange-v2-arb',
     [ChainId.LINEA]: 'https://graph-query.linea.build/subgraphs/name/pancakeswap/exhange-v2',
     [ChainId.BASE]: 'https://api.studio.thegraph.com/query/45376/exchange-v2-base/version/latest',
-    [ChainId.BYTE_TESTNET]: 'https://subgraph.bytemx.io/subgraphs/name/byteswap-exchange',
+    [ChainId.SEPOLIA]: 'https://subgraph.bytemx.io/subgraphs/name/ryuswap-exchange',
     [ChainId.OPBNB]: `https://open-platform-ap.nodereal.io/${noderealApiKey}/opbnb-mainnet-graph-query/subgraphs/name/pancakeswap/exchange-v2`,
   }
 }
 
 export function getBlocksSubgraphs({ noderealApiKey }: SubgraphParams) {
   return {
-    [ChainId.BSC]: 'https://subgraph.bytemx.io/subgraphs/name/byteswap-blocks',
-    [ChainId.BYTE_TESTNET]: 'https://subgraph.bytemx.io/subgraphs/name/byteswap-blocks',
+    [ChainId.BSC]: 'https://subgraph.bytemx.io/subgraphs/name/ryuswap-blocks',
+    [ChainId.SEPOLIA]: 'https://subgraph.bytemx.io/subgraphs/name/ryuswap-blocks',
     [ChainId.ETHEREUM]: 'https://api.thegraph.com/subgraphs/name/blocklytics/ethereum-blocks',
     [ChainId.POLYGON_ZKEVM]: 'https://api.studio.thegraph.com/query/45376/polygon-zkevm-block/version/latest',
     [ChainId.ZKSYNC]: 'https://api.studio.thegraph.com/query/45376/blocks-zksync/version/latest',

@@ -61,7 +61,7 @@ const MenuItem: React.FC<React.PropsWithChildren<FooterProps>> = ({
               {isXl ? <LogoIcon /> : <LogoWithTextIcon width="160px" />}
             </Box>
             <Box display={["none", null, "block"]}>
-              <Text>© 2023 Byte Swap.</Text>
+              <Text>© 2023 Dragon Swap.</Text>
               <Text>All rights reserved.</Text>
             </Box>
             <Box display={["none", null, "block"]}>
@@ -96,7 +96,7 @@ const MenuItem: React.FC<React.PropsWithChildren<FooterProps>> = ({
               {isXl ? <LogoIcon /> : <LogoWithTextIcon width="160px" />}
             </Box>
             <Box display={["block", null, "none"]}>
-              <Text>© 2023 Byte Swap. All rights reserved.</Text>
+              <Text>© 2023 Dragon Swap. All rights reserved.</Text>
             </Box>
             <Box display={["block", null, "none"]}>
               <Text>Privacy Policy | Cookies Policy</Text>

@@ -196,7 +196,7 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
                   <WebNotiToggle enabled={enabled} />
                 </Suspense>
               </Flex>
-              {chainId === ChainId.BYTE_TESTNET && (
+              {chainId === ChainId.SEPOLIA && (
                 <>
                   <Flex justifyContent="space-between" alignItems="center" mb="24px">
                     <Flex alignItems="center">
@@ -235,7 +235,7 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
             <Flex pt="3px" flexDirection="column">
               <PreTitle>{t('Swaps & Liquidity')}</PreTitle>
               <Flex justifyContent="space-between" alignItems="center" mb="24px">
-                {chainId === ChainId.BYTE_TESTNET && <GasSettings />}
+                {chainId === ChainId.SEPOLIA && <GasSettings />}
               </Flex>
               <TransactionSettings />
             </Flex>

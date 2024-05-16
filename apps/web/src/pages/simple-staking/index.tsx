@@ -5,6 +5,6 @@ const FixedStakingPage = () => {
   return <FixedStaking />
 }
 
-FixedStakingPage.chains = [ChainId.BYTE_TESTNET]
+FixedStakingPage.chains = [ChainId.SEPOLIA]
 
 export default FixedStakingPage

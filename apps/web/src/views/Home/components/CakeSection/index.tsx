@@ -429,7 +429,7 @@ const CakeSection: React.FC = () => {
         <Link href="https://pancakeswap.finance/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82&chainId=56">
           <Button variant="primary">{t('Buy CAKE')}</Button>
         </Link>
-        <Link href="https://byteswap-help.gitbook.io/byteswap-document">
+        <Link href="https://ryuswap-help.gitbook.io/ryuswap-document">
           <Button pl="0" endIcon={<OpenNewIcon color="primary" />} variant="text">
             {t('Learn')}
           </Button>

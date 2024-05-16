@@ -34,7 +34,7 @@ const fetchTopTokens = async (chainName: MultiChainNameExtend, timestamp24hAgo: 
       ? `where: { date_gt: ${timestamp24hAgo}, token_not_in: $blacklist, dailyVolumeUSD_gt:2000 }`
       : checkIsStableSwap()
       ? ''
-      : `where: { dailyTxns_gt: ${chainName === 'BYTE_TESTNET' ? 300 : 0}, id_not_in: $blacklist, date_gt: ${timestamp24hAgo}}`
+      : `where: { dailyTxns_gt: ${chainName === 'SEPOLIA' ? 300 : 0}, id_not_in: $blacklist, date_gt: ${timestamp24hAgo}}`
   const firstCount = 50
   try {
     const query = gql`

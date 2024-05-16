@@ -11,30 +11,30 @@ describe('Coin', () => {
   describe('#equals', () => {
     it('fails if address differs', () => {
       expect(
-        new Coin(ChainId.TESTNET, ADDRESS_ONE, 18, 'JIM').equals(new Coin(ChainId.TESTNET, ADDRESS_TWO, 18, 'JIM'))
+        new Coin(ChainId.TESTNET, ADDRESS_ONE, 18, 'DRX').equals(new Coin(ChainId.TESTNET, ADDRESS_TWO, 18, 'DRX'))
       ).toBe(false)
     })
 
     it('false if chain id differs', () => {
       expect(
-        new Coin(ChainId.MAINNET, ADDRESS_ONE, 18, 'JIM').equals(new Coin(ChainId.TESTNET, ADDRESS_ONE, 18, 'JIM'))
+        new Coin(ChainId.MAINNET, ADDRESS_ONE, 18, 'DRX').equals(new Coin(ChainId.TESTNET, ADDRESS_ONE, 18, 'DRX'))
       ).toBe(false)
     })
 
     it('true if only decimals differs', () => {
       expect(
-        new Coin(ChainId.TESTNET, ADDRESS_ONE, 9, 'JIM').equals(new Coin(ChainId.TESTNET, ADDRESS_ONE, 18, 'JIM'))
+        new Coin(ChainId.TESTNET, ADDRESS_ONE, 9, 'DRX').equals(new Coin(ChainId.TESTNET, ADDRESS_ONE, 18, 'DRX'))
       ).toBe(true)
     })
 
     it('true if address is the same', () => {
       expect(
-        new Coin(ChainId.TESTNET, ADDRESS_ONE, 18, 'JIM').equals(new Coin(ChainId.TESTNET, ADDRESS_ONE, 18, 'JIM'))
+        new Coin(ChainId.TESTNET, ADDRESS_ONE, 18, 'DRX').equals(new Coin(ChainId.TESTNET, ADDRESS_ONE, 18, 'DRX'))
       ).toBe(true)
     })
 
     it('true on reference equality', () => {
-      const token = new Coin(ChainId.TESTNET, ADDRESS_ONE, 18, 'JIM')
+      const token = new Coin(ChainId.TESTNET, ADDRESS_ONE, 18, 'DRX')
       expect(token.equals(token)).toBe(true)
     })
 

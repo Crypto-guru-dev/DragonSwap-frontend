@@ -17,7 +17,7 @@ const config = (t: ContextApi['t']) => {
       description: [
         t('In Phase 2 of the NFT Marketplace, collections must be whitelisted before they may be listed.'),
         t('We are now accepting applications from NFT collection owners seeking to list their collections.'),
-        <LinkExternal href="https://byteswap-help.gitbook.io/byteswap-document">
+        <LinkExternal href="https://ryuswap-help.gitbook.io/ryuswap-document">
           {t('Please apply here')}
         </LinkExternal>,
       ],

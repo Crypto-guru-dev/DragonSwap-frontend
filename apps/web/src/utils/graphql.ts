@@ -47,18 +47,18 @@ export const v3Clients = {
   [ChainId.BASE]: new GraphQLClient(V3_SUBGRAPH_URLS[ChainId.BASE]),
   [ChainId.BASE_TESTNET]: new GraphQLClient(V3_SUBGRAPH_URLS[ChainId.BASE_TESTNET]),
   [ChainId.SCROLL_SEPOLIA]: new GraphQLClient(V3_SUBGRAPH_URLS[ChainId.SCROLL_SEPOLIA]),
-  [ChainId.BYTE_TESTNET]: new GraphQLClient(V3_SUBGRAPH_URLS[ChainId.BYTE_TESTNET]),
+  [ChainId.SEPOLIA]: new GraphQLClient(V3_SUBGRAPH_URLS[ChainId.SEPOLIA]),
   [ChainId.OPBNB]: new GraphQLClient(V3_SUBGRAPH_URLS[ChainId.OPBNB]),
 }
 
-export const v3InfoClients = { ...v3Clients, [ChainId.BYTE_TESTNET]: new GraphQLClient(V3_BSC_INFO_CLIENT) }
+export const v3InfoClients = { ...v3Clients, [ChainId.SEPOLIA]: new GraphQLClient(V3_BSC_INFO_CLIENT) }
 
 export const infoClientETH = new GraphQLClient(INFO_CLIENT_ETH)
 
 export const v2Clients = {
   [ChainId.ETHEREUM]: infoClientETH,
   [ChainId.BSC]: infoClient,
-  [ChainId.BYTE_TESTNET]: infoClient,
+  [ChainId.SEPOLIA]: infoClient,
   [ChainId.POLYGON_ZKEVM]: new GraphQLClient(INFO_CLIENT_WITH_CHAIN[ChainId.POLYGON_ZKEVM]),
   [ChainId.ZKSYNC]: new GraphQLClient(INFO_CLIENT_WITH_CHAIN[ChainId.ZKSYNC]),
   [ChainId.LINEA]: new GraphQLClient(INFO_CLIENT_WITH_CHAIN[ChainId.LINEA]),
@@ -69,7 +69,7 @@ export const v2Clients = {
 
 export const infoStableSwapClients = {
   [ChainId.BSC]: new GraphQLClient(STABLESWAP_SUBGRAPHS[ChainId.BSC]),
-  [ChainId.BYTE_TESTNET]: new GraphQLClient(STABLESWAP_SUBGRAPHS[ChainId.BYTE_TESTNET]),
+  [ChainId.SEPOLIA]: new GraphQLClient(STABLESWAP_SUBGRAPHS[ChainId.SEPOLIA]),
   [ChainId.ARBITRUM_ONE]: new GraphQLClient(STABLESWAP_SUBGRAPHS[ChainId.ARBITRUM_ONE]),
 }
 
@@ -80,7 +80,7 @@ export const infoServerClient = new GraphQLClient(INFO_CLIENT, {
   },
 })
 
-export const stableSwapClient = new GraphQLClient(STABLESWAP_SUBGRAPHS[ChainId.BYTE_TESTNET])
+export const stableSwapClient = new GraphQLClient(STABLESWAP_SUBGRAPHS[ChainId.SEPOLIA])
 
 export const bitQueryServerClient = new GraphQLClient(BIT_QUERY, {
   headers: {

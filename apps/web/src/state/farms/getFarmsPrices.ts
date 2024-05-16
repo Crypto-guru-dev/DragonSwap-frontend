@@ -21,9 +21,9 @@ export const nativeStableLpMap = {
     wNative: 'WBNB',
     stable: 'BUSD',
   },
-  [ChainId.BYTE_TESTNET]: {
+  [ChainId.SEPOLIA]: {
     address: '0xDea03d402F36e5cEca332ACdcD34a7d4793549B6',
-    wNative: 'WBEXC',
+    wNative: 'WETH',
     stable: 'USDT',
   },
 }

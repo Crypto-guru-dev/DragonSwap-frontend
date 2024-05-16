@@ -58,7 +58,7 @@ const AffiliateModal = () => {
               <Text fontSize="14px" ml="8px">
                 {t('I have read and agree to the updated')}
                 <Text display="inline-block" as="span" ml="4px">
-                  <Link external href="https://byteswap-help.gitbook.io/byteswap-document">
+                  <Link external href="https://ryuswap-help.gitbook.io/ryuswap-document">
                     {t('terms and conditions')}
                   </Link>
                 </Text>

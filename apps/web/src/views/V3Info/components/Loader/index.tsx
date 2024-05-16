@@ -78,7 +78,7 @@ export const LocalLoader = ({ fill }: { fill: boolean }) => {
   return (
     <Wrapper fill={fill ? 1 : 0}>
       <AnimatedImg>
-        <img src="https://asset.byteswap.finance/web/chains/1923.png" alt="loading-icon" />
+        <img src="https://assets.ryuswap.com/web/chains/1923.png" alt="loading-icon" />
       </AnimatedImg>
     </Wrapper>
   )

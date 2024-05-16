@@ -13,7 +13,7 @@ const fetchFarmsWithAuctions = async (
 ): Promise<{ winnerFarms: string[]; auctionHostingEndDate: string }> => {
   const farmAuctionContract = getFarmAuctionContract()
   const currentAuctionId = await farmAuctionContract.read.currentAuctionId()
-  const bscClient = publicClient({ chainId: ChainId.BYTE_TESTNET })
+  const bscClient = publicClient({ chainId: ChainId.SEPOLIA })
   const [auctionDateResponse, auctionBiddersResponse] = await bscClient.multicall({
     contracts: [
       {

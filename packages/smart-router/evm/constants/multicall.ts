@@ -65,7 +65,17 @@ export const BATCH_MULTICALL_CONFIGS: ChainMap<BatchMulticallConfigs> = {
     },
   },
   [ChainId.BASE_TESTNET]: DEFAULT,
-  [ChainId.BYTE_TESTNET]: DEFAULT,
+  [ChainId.SEPOLIA]: {
+    defaultConfig: {
+      gasLimitPerCall: 2_000_000,
+    },
+    gasErrorFailureOverride: {
+      gasLimitPerCall: 2_000_000,
+    },
+    successRateFailureOverrides: {
+      gasLimitPerCall: 3_000_000,
+    },
+  },
   [ChainId.OPBNB]: DEFAULT,
   [ChainId.OPBNB_TESTNET]: DEFAULT,
   [ChainId.SCROLL_SEPOLIA]: DEFAULT,

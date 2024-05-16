@@ -17,7 +17,7 @@ const config = (t) => [
         )}{' '}
         <LinkExternal
           style={{ display: 'inline-flex' }}
-          href="https://byteswap-help.gitbook.io/byteswap-document"
+          href="https://ryuswap-help.gitbook.io/ryuswap-document"
           showExternalIcon={false}
         >
           {t('documentation')}
@@ -40,7 +40,7 @@ const config = (t) => [
         {t('Please refer to our documentation')}{' '}
         <LinkExternal
           style={{ display: 'inline-flex' }}
-          href="https://byteswap-help.gitbook.io/byteswap-document"
+          href="https://ryuswap-help.gitbook.io/ryuswap-document"
           showExternalIcon={false}
         >
           {t('here.')}

@@ -14,10 +14,10 @@ const getOracleAddress = (chainId: number): Address | null => {
 
 export const useOraclePrice = (chainId: number) => {
   const tokenAddress = getOracleAddress(chainId)
-  const chainlinkOracleContract = getChainlinkOracleContract(tokenAddress, null, ChainId.BYTE_TESTNET)
+  const chainlinkOracleContract = getChainlinkOracleContract(tokenAddress, null, ChainId.SEPOLIA)
   const { data: price } = useContractRead({
     abi: chainlinkOracleContract.abi,
-    chainId: ChainId.BYTE_TESTNET,
+    chainId: ChainId.SEPOLIA,
     address: tokenAddress,
     functionName: 'latestAnswer',
     watch: true,

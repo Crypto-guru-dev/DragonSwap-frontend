@@ -47,7 +47,7 @@ const LatestReward: React.FC<React.PropsWithChildren<LatestRewardProps>> = ({
 
   const [isAffiliateClaimLoading, setIsAffiliateClaimLoading] = useState(false)
   const [isUserClaimLoading, setIsUserClaimLoading] = useState(false)
-  const contract = useAffiliateProgramContract({ chainId: ChainId.BYTE_TESTNET })
+  const contract = useAffiliateProgramContract({ chainId: ChainId.SEPOLIA })
 
   const affiliateTotalCakeEarned = useMemo(
     () => new BigNumber(affiliateRewardFeeUSD).div(cakePriceBusd).toNumber(),
@@ -133,7 +133,7 @@ const LatestReward: React.FC<React.PropsWithChildren<LatestRewardProps>> = ({
 
   return (
     <Box width="100%">
-      {chainId !== ChainId.BYTE_TESTNET && <WrongNetworkWarning />}
+      {chainId !== ChainId.SEPOLIA && <WrongNetworkWarning />}
       {isAffiliate && (
         <Box mb="20px">
           <SingleLatestReward

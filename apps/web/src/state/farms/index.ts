@@ -201,7 +201,7 @@ export const fetchFarmUserDataAsync = createAsyncThunk<
     if (state.farms.chainId !== chainId) {
       await dispatch(fetchInitialFarmsData({ chainId }))
     }
-    const poolLength = state.farms.poolLength ?? (await fetchMasterChefFarmPoolLength(ChainId.BYTE_TESTNET))
+    const poolLength = state.farms.poolLength ?? (await fetchMasterChefFarmPoolLength(ChainId.SEPOLIA))
     const farmsConfig = await getFarmConfig(chainId)
     const farmsCanFetch = farmsConfig.filter(
       (farmConfig) => pids.includes(farmConfig.pid) && poolLength > farmConfig.pid,

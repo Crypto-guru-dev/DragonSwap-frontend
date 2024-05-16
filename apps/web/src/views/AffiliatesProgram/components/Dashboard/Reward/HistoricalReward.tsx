@@ -22,7 +22,7 @@ const HistoricalReward: React.FC<React.PropsWithChildren<HistoricalRewardProps>>
   const { chainId } = useActiveChainId()
   const { toastSuccess, toastError } = useToast()
   const { fetchWithCatchTxError } = useCatchTxError()
-  const contract = useAffiliateProgramContract({ chainId: ChainId.BYTE_TESTNET })
+  const contract = useAffiliateProgramContract({ chainId: ChainId.SEPOLIA })
 
   const [affiliateDataCurrentPage, setAffiliateDataCurrentPage] = useState(1)
   const [userDataCurrentPage, setUserDataCurrentPage] = useState(1)
@@ -113,7 +113,7 @@ const HistoricalReward: React.FC<React.PropsWithChildren<HistoricalRewardProps>>
 
   return (
     <Flex flexDirection="column" width="100%">
-      {chainId !== ChainId.BYTE_TESTNET && <WrongNetworkWarning />}
+      {chainId !== ChainId.SEPOLIA && <WrongNetworkWarning />}
       <>
         {isAffiliate && (
           <SingleHistoricalReward

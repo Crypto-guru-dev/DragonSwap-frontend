@@ -23,11 +23,11 @@ export function getChainName(chainId: ChainId) {
   switch (chainId) {
     case ChainId.BSC:
       return 'BSC'
-    case ChainId.BYTE_TESTNET:
-      return 'BYTE_TESTNET'
+    case ChainId.SEPOLIA:
+      return 'SEPOLIA'
     case ChainId.ETHEREUM:
       return 'ETH'
     default:
-      return 'BYTE_TESTNET'
+      return 'SEPOLIA'
   }
 }

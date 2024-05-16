@@ -38,9 +38,9 @@ const evmNativeStableLpMap: Record<
     wNative: 'WBNB',
     stable: 'BUSD',
   },
-  [ChainId.BYTE_TESTNET]: {
+  [ChainId.SEPOLIA]: {
     address: '0xDea03d402F36e5cEca332ACdcD34a7d4793549B6',
-    wNative: 'WBEXC',
+    wNative: 'WETH',
     stable: 'USDT',
   },
 }
@@ -241,7 +241,7 @@ export const fetchMasterChefData = async (
     const masterChefCalls = farms.map((farm) => masterChefFarmCalls(farm, masterChefAddress))
     const masterChefAggregatedCalls = masterChefCalls.filter(notEmpty)
 
-    const chainId = isTestnet ? ChainId.BYTE_TESTNET : ChainId.BYTE_TESTNET
+    const chainId = isTestnet ? ChainId.SEPOLIA : ChainId.SEPOLIA
     const masterChefMultiCallResult = await provider({ chainId }).multicall({
       contracts: masterChefAggregatedCalls,
       allowFailure: false,
@@ -278,7 +278,7 @@ export const fetchMasterChefV2Data = async ({
   masterChefAddress: Address
 }) => {
   try {
-    const chainId = isTestnet ? ChainId.BYTE_TESTNET : ChainId.BYTE_TESTNET
+    const chainId = isTestnet ? ChainId.SEPOLIA : ChainId.SEPOLIA
     const [poolLength, totalRegularAllocPoint, totalSpecialAllocPoint, cakePerBlock] = await provider({
       chainId,
     }).multicall({

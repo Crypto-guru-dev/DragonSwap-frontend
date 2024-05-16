@@ -176,7 +176,7 @@ export const SwapModalFooter = memo(function SwapModalFooter({
                         style={{ display: 'inline' }}
                         ml="4px"
                         external
-                        href="https://byteswap-help.gitbook.io/byteswap-document"
+                        href="https://ryuswap-help.gitbook.io/ryuswap-document"
                       >
                         {t('here.')}
                       </Link>
@@ -203,7 +203,7 @@ export const SwapModalFooter = memo(function SwapModalFooter({
                         style={{ display: 'inline' }}
                         ml="4px"
                         external
-                        href="https://byteswap-help.gitbook.io/byteswap-document"
+                        href="https://ryuswap-help.gitbook.io/ryuswap-document"
                       >
                         {t('Fee Breakdown and Tokenomics')}
                       </Link>

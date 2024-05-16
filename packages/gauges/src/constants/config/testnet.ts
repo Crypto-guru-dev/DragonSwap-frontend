@@ -10,7 +10,7 @@ export const CONFIG_TESTNET: GaugeConfig[] = [
     type: GaugeType.V2,
     token0Address: '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82',
     token1Address: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
-    pairName: 'JIM-WBNB',
+    pairName: 'DRX-WBNB',
     feeTier: FeeAmount.MEDIUM,
   },
   {

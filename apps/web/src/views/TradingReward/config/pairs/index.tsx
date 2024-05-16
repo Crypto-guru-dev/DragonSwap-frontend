@@ -28,5 +28,5 @@ export const tradingRewardPairConfigChainMap: Record<FarmV3SupportedChainId, Com
   [ChainId.BASE]: baseFarm,
   [ChainId.OPBNB_TESTNET]: opBNBTestnetFarms,
   [ChainId.OPBNB]: opBNBFarms,
-  [ChainId.BYTE_TESTNET]: byteTestnetFarm,
+  [ChainId.SEPOLIA]: byteTestnetFarm,
 }

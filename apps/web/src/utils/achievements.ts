@@ -47,10 +47,10 @@ export const getAchievementDescription = (campaign: Campaign | undefined, t: Tra
  * Checks if a wallet is eligible to claim points from valid IFO's
  */
 export const getClaimableIfoData = async (account: string, t: TranslateFunction): Promise<Achievement[]> => {
-  const ifosList = (await getIfoConfig(ChainId.BYTE_TESTNET)) || []
+  const ifosList = (await getIfoConfig(ChainId.SEPOLIA)) || []
   const ifoCampaigns = ifosList.filter((ifoItem) => ifoItem.campaignId !== undefined)
 
-  const bscClient = publicClient({ chainId: ChainId.BYTE_TESTNET })
+  const bscClient = publicClient({ chainId: ChainId.SEPOLIA })
 
   // Returns the claim status of every IFO with a campaign ID
   const claimStatusesResults = await bscClient.multicall({

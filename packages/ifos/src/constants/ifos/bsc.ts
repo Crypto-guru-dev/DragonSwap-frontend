@@ -9,7 +9,7 @@ export const ifos: BaseIfoConfig[] = [
     address: '0x5f77A54F4314aef5BDd311aCfcccAC90B39432e8',
     isActive: true,
     cIFO: true,
-    name: 'JIMPIE',
+    name: 'DRXPIE',
     plannedStartTime: 1704369600, // Thu Jan 04 2024 12:00:00 UTC
     poolBasic: {
       raiseAmount: '$30,000',
@@ -26,7 +26,7 @@ export const ifos: BaseIfoConfig[] = [
     version: 7,
     twitterUrl: 'https://twitter.com/Cakepiexyz_io',
     description:
-      'Cakepie is a veCAKE Manager that boosts rewards for CAKE stakers and PancakeSwap’s liquidity providers, as part of the wider [veCAKE Ecosystem](https://byteswap-help.gitbook.io/byteswap-document)',
+      'Cakepie is a veCAKE Manager that boosts rewards for CAKE stakers and PancakeSwap’s liquidity providers, as part of the wider [veCAKE Ecosystem](https://ryuswap-help.gitbook.io/ryuswap-document)',
     vestingTitle:
       'CKP is the primary token issued by Cakepie which can be locked for vlCKP (Vote-Locked Cakepie) at a 1:1 ratio.',
   },

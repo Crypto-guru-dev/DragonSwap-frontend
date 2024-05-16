@@ -56,7 +56,7 @@ const MenuWrapper = styled.div`
   }
 `
 
-const LIQUIDITY_FILTER = { [ChainId.BYTE_TESTNET]: 100000, [ChainId.ETHEREUM]: 50000 }
+const LIQUIDITY_FILTER = { [ChainId.SEPOLIA]: 100000, [ChainId.ETHEREUM]: 50000 }
 const HotTokenList: React.FC<{ handleOutputSelect: (newCurrencyOutput: Currency) => void }> = ({
   handleOutputSelect,
 }) => {
@@ -140,7 +140,7 @@ const HotTokenList: React.FC<{ handleOutputSelect: (newCurrencyOutput: Currency)
       <Wrapper>
         <MenuWrapper>
           <ButtonMenu activeIndex={index} onItemClick={setIndex} fullWidth scale="sm" variant="subtle">
-            <ButtonMenuItem>{chainId === ChainId.BYTE_TESTNET ? t('Price Change') : t('Liquidity')}</ButtonMenuItem>
+            <ButtonMenuItem>{chainId === ChainId.SEPOLIA ? t('Price Change') : t('Liquidity')}</ButtonMenuItem>
             <ButtonMenuItem>{t('Volume (24H)')}</ButtonMenuItem>
           </ButtonMenu>
         </MenuWrapper>
@@ -168,8 +168,8 @@ const HotTokenList: React.FC<{ handleOutputSelect: (newCurrencyOutput: Currency)
           <TokenTable
             dataSource={dataSource}
             tokenDatas={dataSource === DataSourceType.V3 ? filterFormattedV3Tokens : formattedTokens}
-            type={chainId === ChainId.BYTE_TESTNET ? 'priceChange' : 'liquidity'}
-            defaultSortField={chainId === ChainId.BYTE_TESTNET ? 'priceUSDChange' : 'liquidityUSD'}
+            type={chainId === ChainId.SEPOLIA ? 'priceChange' : 'liquidity'}
+            defaultSortField={chainId === ChainId.SEPOLIA ? 'priceUSDChange' : 'liquidityUSD'}
             maxItems={isMobile ? 100 : 6}
             handleOutputSelect={handleOutputSelect}
           />

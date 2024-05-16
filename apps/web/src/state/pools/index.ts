@@ -116,7 +116,7 @@ export const fetchCakePoolPublicDataAsync = () => async (dispatch) => {
 export const fetchCakePoolUserDataAsync =
   ({ account, chainId }: { account: string; chainId: ChainId }) =>
   async (dispatch) => {
-    const client = publicClient({ chainId: ChainId.BYTE_TESTNET })
+    const client = publicClient({ chainId: ChainId.SEPOLIA })
     const [allowance, stakingTokenBalance] = await client.multicall({
       contracts: [
         {
@@ -188,7 +188,7 @@ export const fetchPoolsPublicDataAsync = (chainId: number) => async (dispatch, g
     const bnbBusdFarms =
       activePriceHelperLpsConfig.length > 0
         ? [...orderBy(farmsV3Data, 'lmPoolLiquidity', 'desc'), ...farmsV2Data].filter(
-            (farm) => farm.token.symbol === 'USDT' && farm.quoteToken.symbol === 'BEXC',
+            (farm) => farm.token.symbol === 'USDT' && farm.quoteToken.symbol === 'ETH',
           )
         : []
     const farmsWithPricesOfDifferentTokenPools =

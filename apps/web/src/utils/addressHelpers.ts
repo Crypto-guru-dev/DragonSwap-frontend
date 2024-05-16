@@ -9,7 +9,7 @@ export type Addresses = {
 }
 
 export const getAddressFromMap = (address: Addresses, chainId?: number): `0x${string}` => {
-  return chainId && address[chainId] ? address[chainId] : address[ChainId.BYTE_TESTNET]
+  return chainId && address[chainId] ? address[chainId] : address[ChainId.SEPOLIA]
 }
 
 export const getAddressFromMapNoFallback = (address: Addresses, chainId?: number): `0x${string}` | null => {

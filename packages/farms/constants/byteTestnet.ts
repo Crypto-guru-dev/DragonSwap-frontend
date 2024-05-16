@@ -62,14 +62,14 @@ const farms: SerializedFarmConfig[] = [
    */
   // {
   //   pid: 0,
-  //   lpSymbol: 'JIM',
+  //   lpSymbol: 'DRX',
   //   lpAddress: '0x36e3E4fF6471559b19F66bD10985534d5e214D44',
   //   token: bscTestnetTokens.syrup,
   //   quoteToken: bscTestnetTokens.wbnb,
   // },
   {
     pid: 0,
-    lpSymbol: 'USDT-JIM LP',
+    lpSymbol: 'USDT-DRX LP',
     lpAddress: '0x1A250E13D07695Fc92aB68aa1fAB2BA86D516Ae1',
     token: byteTestnetTokens.usdt,
     quoteToken: byteTestnetTokens.cake,
@@ -83,7 +83,7 @@ const farms: SerializedFarmConfig[] = [
   // },
   // {
   //   pid: 4,
-  //   lpSymbol: 'JIM-BNB LP',
+  //   lpSymbol: 'DRX-BNB LP',
   //   lpAddress: '0xa96818CA65B57bEc2155Ba5c81a70151f63300CD',
   //   token: bscTestnetTokens.cake,
   //   quoteToken: bscTestnetTokens.wbnb,

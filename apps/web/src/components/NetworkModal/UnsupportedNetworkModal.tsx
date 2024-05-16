@@ -17,7 +17,7 @@ export function UnsupportedNetworkModal({ pageSupportedChains }: { pageSupported
   const { switchNetworkAsync, isLoading, canSwitch } = useSwitchNetwork()
   const switchNetworkLocal = useSwitchNetworkLocal()
   const { chains } = useNetwork()
-  const chainId = useLocalNetworkChain() || ChainId.BYTE_TESTNET
+  const chainId = useLocalNetworkChain() || ChainId.SEPOLIA
   const { isConnected } = useAccount()
   const { logout } = useAuth()
   const { t } = useTranslation()
@@ -46,7 +46,7 @@ export function UnsupportedNetworkModal({ pageSupportedChains }: { pageSupported
           <Image
             width={160}
             height={150}
-            src="https://asset.byteswap.finance/images/decorations/3d-byte-rooster.png"
+            src="https://assets.ryuswap.com/images/decorations/3d-byte-rooster.png"
             alt="check your network"
           />
         </div>
@@ -60,7 +60,7 @@ export function UnsupportedNetworkModal({ pageSupportedChains }: { pageSupported
               if (supportedMainnetChains.map((c) => c.id).includes(chainId)) {
                 switchNetworkAsync(chainId)
               } else {
-                switchNetworkAsync(ChainId.BYTE_TESTNET)
+                switchNetworkAsync(ChainId.SEPOLIA)
               }
             }}
           >
@@ -76,7 +76,7 @@ export function UnsupportedNetworkModal({ pageSupportedChains }: { pageSupported
             variant="secondary"
             onClick={() =>
               logout().then(() => {
-                switchNetworkLocal(ChainId.BYTE_TESTNET)
+                switchNetworkLocal(ChainId.SEPOLIA)
               })
             }
           >

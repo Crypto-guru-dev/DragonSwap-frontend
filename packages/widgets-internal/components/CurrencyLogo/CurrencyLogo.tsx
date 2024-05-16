@@ -53,7 +53,7 @@ export function CurrencyLogo({
     return (
       <StyledLogo
         size={size}
-        srcs={[`https://asset.byteswap.finance/web/native/${currency.chainId}.png`]}
+        srcs={[`https://assets.ryuswap.com/web/native/${currency.chainId}.png`]}
         width={size}
         style={style}
         {...props}

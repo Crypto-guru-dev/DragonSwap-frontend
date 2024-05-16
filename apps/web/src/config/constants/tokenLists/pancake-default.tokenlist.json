@@ -6,35 +6,35 @@
     "minor": 16,
     "patch": 1
   },
-  "logoURI": "https://asset.byteswap.finance/web/chains/1919.png",
+  "logoURI": "https://assets.ryuswap.com/web/chains/11155111.png",
   "keywords": [
     "byteSwap",
     "extended"
   ],
   "tokens": [
     {
-      "name": "ByteSwap Token",
-      "symbol": "JIM",
-      "address": "0x245AaFE758Dd4068A899F201155EE2728E4F571A",
-      "chainId": 1919,
+      "name": "DragonSwap Token",
+      "symbol": "DRX",
+      "address": "0x2B367049Cf50100A9dbe080111b63B0104322266",
+      "chainId": 11155111,
       "decimals": 18,
-      "logoURI": "https://asset.byteswap.finance/images/byteTestnet/0x245AaFE758Dd4068A899F201155EE2728E4F571A.png"
+      "logoURI": "https://assets.ryuswap.com/images/sepolia/0x2B367049Cf50100A9dbe080111b63B0104322266.png"
     },
     {
       "name": "Tether USD",
       "symbol": "USDT",
-      "address": "0x44590967ffBFFb53bbd773574578cCAbA6c0082a",
-      "chainId": 1919,
+      "address": "0xdD99CE963585d073e7260fcEA8D8F8a2316170A3",
+      "chainId": 11155111,
       "decimals": 18,
-      "logoURI": "https://asset.byteswap.finance/images/byteTestnet/0x44590967ffBFFb53bbd773574578cCAbA6c0082a.png"
+      "logoURI": "https://assets.ryuswap.com/images/sepolia/0xdD99CE963585d073e7260fcEA8D8F8a2316170A3.png"
     },
     {
-      "name": "ByteX Coin",
-      "symbol": "WBEXC",
-      "address": "0x0e2dE4cafE26105bE7C9A8748D8588e6E7DD0147",
-      "chainId": 1919,
+      "name": "Wrapped ETH",
+      "symbol": "WETH",
+      "address": "0xb16F35c0Ae2912430DAc15764477E179D9B9EbEa",
+      "chainId": 11155111,
       "decimals": 18,
-      "logoURI": "https://asset.byteswap.finance/images/byteTestnet/0x0e2dE4cafE26105bE7C9A8748D8588e6E7DD0147.png"
+      "logoURI": "https://assets.ryuswap.com/images/sepolia/0xb16F35c0Ae2912430DAc15764477E179D9B9EbEa.png"
     }
   ]
 }

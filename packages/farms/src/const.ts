@@ -1,8 +1,8 @@
 import { ChainId } from '@pancakeswap/chains'
 import uniq from 'lodash/uniq'
 
-export const supportedChainIdV2 = [ChainId.BYTE_TESTNET] as const
-// export const supportedChainIdV2 = [ChainId.GOERLI, ChainId.BSC, ChainId.BSC_TESTNET, ChainId.ETHEREUM, ChainId.BYTE_TESTNET] as const
+export const supportedChainIdV2 = [ChainId.SEPOLIA] as const
+// export const supportedChainIdV2 = [ChainId.GOERLI, ChainId.BSC, ChainId.BSC_TESTNET, ChainId.ETHEREUM, ChainId.SEPOLIA] as const
 export const supportedChainIdV3 = [
   ChainId.GOERLI,
   ChainId.BSC,
@@ -17,7 +17,7 @@ export const supportedChainIdV3 = [
   ChainId.BASE,
   ChainId.OPBNB,
   ChainId.OPBNB_TESTNET,
-  ChainId.BYTE_TESTNET
+  ChainId.SEPOLIA
 ] as const
 export const supportedChainId = uniq([...supportedChainIdV2, ...supportedChainIdV3])
 export const bCakeSupportedChainId = [ChainId.BSC] as const
@@ -33,7 +33,7 @@ export type FarmV3SupportedChainId = (typeof supportedChainIdV3)[number]
 export const masterChefAddresses = {
   [ChainId.BSC_TESTNET]: '0xB4A466911556e39210a6bB2FaECBB59E4eB7E43d',
   [ChainId.BSC]: '0xa5f8C5Dbd5F286960b9d90548680aE5ebFf07652',
-  [ChainId.BYTE_TESTNET]: '0x4241957E7446bE7B56e2FC1A772F4b8002E20E2f',
+  [ChainId.SEPOLIA]: '0x4241957E7446bE7B56e2FC1A772F4b8002E20E2f',
 } as const
 
 export const masterChefV3Addresses = {
@@ -50,7 +50,7 @@ export const masterChefV3Addresses = {
   [ChainId.BASE]: '0xC6A2Db661D5a5690172d8eB0a7DEA2d3008665A3',
   [ChainId.OPBNB]: '0x05ddEDd07C51739d2aE21F6A9d97a8d69C2C3aaA',
   [ChainId.OPBNB_TESTNET]: '0x236e713bFF45adb30e25D1c29A887aBCb0Ea7E21',
-  [ChainId.BYTE_TESTNET]: '0x8ef1Dae34F91a1c610ed11E1cDa0a4f929F6f05A',
+  [ChainId.SEPOLIA]: '0x8ef1Dae34F91a1c610ed11E1cDa0a4f929F6f05A',
 } as const satisfies Record<FarmV3SupportedChainId, string>
 
 export const nonBSCVaultAddresses = {

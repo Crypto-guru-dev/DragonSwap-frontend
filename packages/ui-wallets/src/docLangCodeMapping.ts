@@ -11,5 +11,5 @@ const docLangCodeMapping: Record<string, string> = {
 
 export const getDocLink = (code: string) =>
   docLangCodeMapping[code]
-    ? `https://byteswap-help.gitbook.io/byteswap-document`
-    : `https://byteswap-help.gitbook.io/byteswap-document`
+    ? `https://ryuswap-help.gitbook.io/ryuswap-document`
+    : `https://ryuswap-help.gitbook.io/ryuswap-document`

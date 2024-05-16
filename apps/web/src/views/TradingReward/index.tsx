@@ -67,7 +67,7 @@ const TradingReward = () => {
       .filter((item) => currentTime > item?.campaignClaimTime ?? 0)
   }, [allTradingRewardPairData, allUserCampaignInfo])
 
-  if (chainId !== ChainId.BYTE_TESTNET) {
+  if (chainId !== ChainId.SEPOLIA) {
     return null
   }
 

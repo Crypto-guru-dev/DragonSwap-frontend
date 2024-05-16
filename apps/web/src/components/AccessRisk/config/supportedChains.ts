@@ -1,3 +1,3 @@
 import { ChainId } from '@pancakeswap/chains'
 
-export const ACCESS_TOKEN_SUPPORT_CHAIN_IDS = [ChainId.BSC, ChainId.BYTE_TESTNET]
+export const ACCESS_TOKEN_SUPPORT_CHAIN_IDS = [ChainId.BSC, ChainId.SEPOLIA]

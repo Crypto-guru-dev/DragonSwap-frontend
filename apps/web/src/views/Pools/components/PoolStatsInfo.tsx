@@ -133,7 +133,7 @@ const PoolStatsInfo: React.FC<React.PropsWithChildren<ExpandedFooterProps>> = ({
       )}
       {vaultKey && (
         <Flex mb="2px" justifyContent={alignLinksToRight ? 'flex-end' : 'flex-start'}>
-          <LinkExternal href="https://byteswap-help.gitbook.io/byteswap-document" bold={false} small color='white'>
+          <LinkExternal href="https://ryuswap-help.gitbook.io/ryuswap-document" bold={false} small color='white'>
             {t('View Tutorial')}
           </LinkExternal>
         </Flex>

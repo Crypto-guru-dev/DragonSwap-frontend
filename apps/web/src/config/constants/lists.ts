@@ -1,9 +1,9 @@
 import { ChainId } from '@pancakeswap/chains'
 
-export const PANCAKE_EXTENDED = 'https://asset.byteswap.finance/token-list.json'
+export const PANCAKE_EXTENDED = 'https://assets.ryuswap.com/token-list.json'
 
 const COINGECKO = 'https://tokens.pancakeswap.finance/coingecko.json'
-const PANCAKE_ETH_DEFAULT = 'https://asset.byteswap.finance/token-list.json'
+const PANCAKE_ETH_DEFAULT = 'https://assets.ryuswap.com/token-list.json'
 const PANCAKE_ZKSYNC_DEFAULT = 'https://tokens.pancakeswap.finance/pancakeswap-zksync-default.json'
 const PANCAKE_POLYGON_ZKEVM_DEFAULT = 'https://tokens.pancakeswap.finance/pancakeswap-polygon-zkevm-default.json'
 const PANCAKE_ARB_DEFAULT = 'https://tokens.pancakeswap.finance/pancakeswap-arbitrum-default.json'
@@ -67,7 +67,7 @@ export const DEFAULT_ACTIVE_LIST_URLS: string[] = [
 
 export const MULTI_CHAIN_LIST_URLS: { [chainId: number]: string[] } = {
   [ChainId.BSC]: BSC_URLS,
-  [ChainId.BYTE_TESTNET]: BSC_URLS,
+  [ChainId.SEPOLIA]: BSC_URLS,
   [ChainId.ETHEREUM]: ETH_URLS,
   [ChainId.ZKSYNC]: ZKSYNC_URLS,
   [ChainId.POLYGON_ZKEVM]: POLYGON_ZKEVM_URLS,

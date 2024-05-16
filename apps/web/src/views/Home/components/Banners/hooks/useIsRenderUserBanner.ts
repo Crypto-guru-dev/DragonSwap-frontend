@@ -14,7 +14,7 @@ const useIsRenderUserBanner = () => {
   const isEarningsBusdZero = new BigNumber(farmEarningsSum).multipliedBy(cakePriceBusd).isZero()
 
   return useMemo(() => {
-    return { shouldRender: Boolean(account) && chainId === ChainId.BYTE_TESTNET, isEarningsBusdZero }
+    return { shouldRender: Boolean(account) && chainId === ChainId.SEPOLIA, isEarningsBusdZero }
   }, [account, chainId, isEarningsBusdZero])
 }
 

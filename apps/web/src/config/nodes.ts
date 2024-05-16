@@ -77,7 +77,7 @@ export const SERVER_NODES = {
   ],
   [ChainId.BASE_TESTNET]: baseGoerli.rpcUrls.public.http,
   [ChainId.SCROLL_SEPOLIA]: scrollSepolia.rpcUrls.public.http,
-  [ChainId.BYTE_TESTNET]: ['https://test-rpc.bytexc.org/'],
+  [ChainId.SEPOLIA]: ['https://ethereum-sepolia-rpc.publicnode.com/'],
 } satisfies Record<ChainId, readonly string[]>
 
 export const PUBLIC_NODES = {
@@ -147,5 +147,5 @@ export const PUBLIC_NODES = {
   ].filter(Boolean),
   [ChainId.BASE_TESTNET]: baseGoerli.rpcUrls.public.http,
   [ChainId.SCROLL_SEPOLIA]: scrollSepolia.rpcUrls.public.http,
-  [ChainId.BYTE_TESTNET]: ['https://test-rpc.bytexc.org/'],
+  [ChainId.SEPOLIA]: ['https://ethereum-sepolia-rpc.publicnode.com/'],
 } satisfies Record<ChainId, readonly string[]>

@@ -17,7 +17,7 @@ export function WrongNetworkModal({ currentChain, onDismiss }: { currentChain: C
   const { logout } = useAuth()
   const { isConnected } = useAccount()
   const [, setSessionChainId] = useSessionChainId()
-  const chainId = currentChain.id || ChainId.BYTE_TESTNET
+  const chainId = currentChain.id || ChainId.SEPOLIA
   const { t } = useTranslation()
 
   const switchText = t('Switch to %network%', { network: currentChain.name })
@@ -30,7 +30,7 @@ export function WrongNetworkModal({ currentChain, onDismiss }: { currentChain: C
           {t('You are under %network% now, please switch the network to continue.', { network: chain?.name ?? '' })}
         </Text>
         <div style={{ textAlign: 'center', display: 'flex', justifyContent: 'center' }}>
-          <Image width={160} height={140} src="https://asset.byteswap.finance/images/decorations/3d-byte-rooster.png" alt="check your network" />
+          <Image width={160} height={140} src="https://assets.ryuswap.com/images/decorations/3d-byte-rooster.png" alt="check your network" />
         </div>
         <Message variant="warning" icon={false} p="8px 12px">
           <MessageText>

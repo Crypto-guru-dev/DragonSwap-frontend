@@ -332,7 +332,7 @@ const HowToPlay: React.FC<React.PropsWithChildren> = () => {
                 {t(
                   'An average total of 35,000 CAKE from the treasury is added to lottery rounds over the course of a week. This CAKE is of course also included in rollovers! Read more in our guide to ',
                 )}
-                <InlineLink href="https://byteswap-help.gitbook.io/byteswap-document">
+                <InlineLink href="https://ryuswap-help.gitbook.io/ryuswap-document">
                   {t('JIM Tokenomics')}
                 </InlineLink>
               </Text>
@@ -352,7 +352,7 @@ const HowToPlay: React.FC<React.PropsWithChildren> = () => {
           </Heading>
           <Text>
             {t('Check our in-depth guide on')}{' '}
-            <InlineLink href="https://byteswap-help.gitbook.io/byteswap-document">
+            <InlineLink href="https://ryuswap-help.gitbook.io/ryuswap-document">
               {t('how to play the PancakeSwap lottery!')}
             </InlineLink>
           </Text>

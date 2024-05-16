@@ -71,7 +71,7 @@ const MultiChainHarvestModal: React.FC<MultiChainHarvestModalProp> = ({
   const displayBalance = earnings.toFixed(5, BigNumber.ROUND_DOWN)
 
   const isTestnet = farmFetcher.isTestnet(chainId)
-  const network = isTestnet ? ChainId.BYTE_TESTNET : ChainId.BYTE_TESTNET
+  const network = isTestnet ? ChainId.SEPOLIA : ChainId.SEPOLIA
   const isBscNetwork = useMemo(() => chainId === network, [chainId, network])
 
   const handleCancel = useCallback(() => {
@@ -128,7 +128,7 @@ const MultiChainHarvestModal: React.FC<MultiChainHarvestModalProp> = ({
               <FlexGap gap="12px">
                 <FlexGap gap="6px">
                   <ChainLogo chainId={chainId} /> <ArrowForwardIcon color="#D67E0A" />
-                  <ChainLogo chainId={ChainId.BYTE_TESTNET} />
+                  <ChainLogo chainId={ChainId.SEPOLIA} />
                 </FlexGap>
                 <span>{t('Harvest on BNB Smart Chain')}</span>
               </FlexGap>

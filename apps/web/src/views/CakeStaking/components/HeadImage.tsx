@@ -43,7 +43,7 @@ export const NewCakeStakingCard: React.FC = () => {
     <AtomBox display="flex" alignItems="center">
       <Link
         external
-        href="https://byteswap-help.gitbook.io/byteswap-document"
+        href="https://ryuswap-help.gitbook.io/ryuswap-document"
         style={{ textDecoration: 'none' }}
       >
         <SpeechBubbleBox display="flex">
@@ -71,7 +71,7 @@ export const HeadBunny = () => {
     return (
       <Link
         external
-        href="https://byteswap-help.gitbook.io/byteswap-document"
+        href="https://ryuswap-help.gitbook.io/ryuswap-document"
         style={{ textDecoration: 'none' }}
       >
         <Button variant="subtle" endIcon={<HelpIcon color="white" width="24px" />} mt="1em">

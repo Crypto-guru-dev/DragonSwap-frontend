@@ -75,7 +75,7 @@ const fetchFarmCalls = (farm: SerializedFarmPublicData, masterChefAddress: strin
 
 export const fetchPublicFarmsData = async (
   farms: SerializedFarmConfig[],
-  chainId = ChainId.BYTE_TESTNET,
+  chainId = ChainId.SEPOLIA,
   provider: ({ chainId }: { chainId: number }) => PublicClient,
   masterChefAddress: string,
 ) => {

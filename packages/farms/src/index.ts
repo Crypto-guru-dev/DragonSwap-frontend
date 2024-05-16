@@ -40,7 +40,7 @@ export function createFarmFetcher(provider: ({ chainId }: { chainId: FarmV2Suppo
     } & Pick<FetchFarmsParams, 'chainId' | 'farms'>,
   ) => {
     const { isTestnet, farms, chainId } = params
-    const masterChefAddress = isTestnet ? masterChefAddresses[ChainId.BYTE_TESTNET] : masterChefAddresses[ChainId.BYTE_TESTNET]
+    const masterChefAddress = isTestnet ? masterChefAddresses[ChainId.SEPOLIA] : masterChefAddresses[ChainId.SEPOLIA]
     const { poolLength, totalRegularAllocPoint, totalSpecialAllocPoint, cakePerBlock } = await fetchMasterChefV2Data({
       isTestnet,
       provider,

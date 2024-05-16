@@ -85,7 +85,7 @@ const RevenueSharing: React.FunctionComponent<React.PropsWithChildren<RevenueSha
           </Message>
         )}
         <ClaimButton availableClaim={availableClaim} onDismiss={onDismiss} />
-        <LinkExternal external m="8px auto auto auto" href="https://byteswap-help.gitbook.io/byteswap-document">
+        <LinkExternal external m="8px auto auto auto" href="https://ryuswap-help.gitbook.io/ryuswap-document">
           {t('Learn More')}
         </LinkExternal>
       </Box>

@@ -44,7 +44,7 @@ export const SMART_ROUTER_ADDRESSES = {
   [ChainId.BASE]: '0x678Aa4bF4E210cf2166753e054d5b7c31cc7fa86',
   [ChainId.BASE_TESTNET]: '0xDDC44b8507B4Ca992fB60F0ECdF5651A87668509',
   [ChainId.SCROLL_SEPOLIA]: '0xDDC44b8507B4Ca992fB60F0ECdF5651A87668509',
-  [ChainId.BYTE_TESTNET]: '0x208B70418e6455201c329776C0760766F264B6a3',
+  [ChainId.SEPOLIA]: '0x208B70418e6455201c329776C0760766F264B6a3',
 } as const satisfies Record<ChainId, string>
 
 export const V2_ROUTER_ADDRESS: ChainMap<string> = {
@@ -65,7 +65,7 @@ export const V2_ROUTER_ADDRESS: ChainMap<string> = {
   [ChainId.BASE]: '0x8cFe327CEc66d1C090Dd72bd0FF11d690C33a2Eb',
   [ChainId.BASE_TESTNET]: '0xC259d1D3476558630d83b0b60c105ae958382792',
   [ChainId.SCROLL_SEPOLIA]: '0x715303D2eF7dA7FFAbF637651D71FD11d41fAf7F',
-  [ChainId.BYTE_TESTNET]: '0xA93A08eB6Ec3c15533ed0ccC9120462a44e86cE7',
+  [ChainId.SEPOLIA]: '0x666f12fF73C7B3269BdD3e8AC5A8Aae8b2026B8B',
 }
 
 export const STABLE_SWAP_INFO_ADDRESS: ChainMap<string> = {
@@ -86,7 +86,7 @@ export const STABLE_SWAP_INFO_ADDRESS: ChainMap<string> = {
   [ChainId.BASE]: '',
   [ChainId.BASE_TESTNET]: '',
   [ChainId.SCROLL_SEPOLIA]: '',
-  [ChainId.BYTE_TESTNET]: '0xF02d762c8C28f9Fb502Dc46c466ACd3c07fF9a85',
+  [ChainId.SEPOLIA]: '0xF02d762c8C28f9Fb502Dc46c466ACd3c07fF9a85',
 }
 
 // used to construct intermediary pairs for trading
@@ -116,7 +116,7 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   [ChainId.BASE]: [baseTokens.usdc, baseTokens.weth],
   [ChainId.BASE_TESTNET]: [baseTestnetTokens.usdc, baseTestnetTokens.weth],
   [ChainId.SCROLL_SEPOLIA]: [scrollSepoliaTokens.usdc, scrollSepoliaTokens.weth],
-  [ChainId.BYTE_TESTNET]: [byteTestnetTokens.usdt, byteTestnetTokens.weth],
+  [ChainId.SEPOLIA]: [byteTestnetTokens.usdt, byteTestnetTokens.weth],
 }
 
 const czusd = new ERC20Token(ChainId.BSC, '0xE68b79e51bf826534Ff37AA9CeE71a3842ee9c70', 18, 'CZUSD', 'CZUSD')

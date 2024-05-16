@@ -20,7 +20,7 @@ const WalletWrongNetwork: React.FC<React.PropsWithChildren<WalletWrongNetworkPro
   const { switchNetworkAsync, canSwitch } = useSwitchNetwork()
 
   const handleSwitchNetwork = async (): Promise<void> => {
-    await switchNetworkAsync(ChainId.BYTE_TESTNET)
+    await switchNetworkAsync(ChainId.SEPOLIA)
     onDismiss?.()
   }
 
@@ -36,7 +36,7 @@ const WalletWrongNetwork: React.FC<React.PropsWithChildren<WalletWrongNetworkPro
           <MessageText>{t('Unable to switch network. Please try it on your wallet')}</MessageText>
         </Message>
       )}
-      <StyledLink href="https://byteswap-help.gitbook.io/byteswap-document" external>
+      <StyledLink href="https://ryuswap-help.gitbook.io/ryuswap-document" external>
         <Button width="100%" variant="secondary">
           {t('Learn How')}
           <HelpIcon color="primary" ml="6px" />

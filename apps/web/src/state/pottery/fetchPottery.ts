@@ -47,7 +47,7 @@ export const fetchPublicPotteryValue = async (potteryVaultAddress: Address) => {
       getLockTime,
       getMaxTotalDeposit,
       { lastDrawId, totalPrize },
-    ] = await publicClient({ chainId: ChainId.BYTE_TESTNET }).multicall({
+    ] = await publicClient({ chainId: ChainId.SEPOLIA }).multicall({
       contracts: [
         {
           abi: potteryVaultABI,

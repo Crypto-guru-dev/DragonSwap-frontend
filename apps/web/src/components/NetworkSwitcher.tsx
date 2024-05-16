@@ -101,10 +101,10 @@ const WrongNetworkSelect = ({ switchNetwork, chainId }) => {
     },
   )
   const { chain } = useNetwork()
-  const localChainId = useLocalNetworkChain() || ChainId.BYTE_TESTNET
+  const localChainId = useLocalNetworkChain() || ChainId.SEPOLIA
   const [, setSessionChainId] = useSessionChainId()
 
-  const localChainName = chains.find((c) => c.id === localChainId)?.name ?? 'BYTE_TESTNET'
+  const localChainName = chains.find((c) => c.id === localChainId)?.name ?? 'SEPOLIA'
 
   const [ref1, isHover] = useHover<HTMLButtonElement>()
 
@@ -158,7 +158,7 @@ const SHORT_SYMBOL = {
   [ChainId.BASE]: 'Base',
   [ChainId.BASE_TESTNET]: 'tBase',
   [ChainId.SCROLL_SEPOLIA]: 'tScroll',
-  [ChainId.BYTE_TESTNET]: 'BEXC',
+  [ChainId.SEPOLIA]: 'ETH',
 } as const satisfies Record<ChainId, string>
 
 export const NetworkSwitcher = () => {

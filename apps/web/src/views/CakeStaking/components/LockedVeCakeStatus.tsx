@@ -37,7 +37,7 @@ const LearnMore = () => {
   const { t } = useTranslation()
   return (
     <Link
-      href="https://byteswap-help.gitbook.io/byteswap-document"
+      href="https://ryuswap-help.gitbook.io/ryuswap-document"
       color="text"
     >
       {t('Learn More >>')}

@@ -221,7 +221,7 @@ export function UpdatePositionsReminder_() {
           )}
           <LinkExternal
             m="auto"
-            href="https://byteswap-help.gitbook.io/byteswap-document"
+            href="https://ryuswap-help.gitbook.io/ryuswap-document"
           >
             <Trans>Learn More</Trans>
           </LinkExternal>

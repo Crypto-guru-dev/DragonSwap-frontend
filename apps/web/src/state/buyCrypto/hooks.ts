@@ -24,7 +24,7 @@ type CurrencyLimits = {
 const defaultTokenByChain = {
   [ChainId.ETHEREUM]: 'ETH',
   [ChainId.BSC]: 'BNB',
-  [ChainId.BYTE_TESTNET]: 'BEXC',
+  [ChainId.SEPOLIA]: 'ETH',
   [ChainId.ZKSYNC]: 'ETH',
   [ChainId.ARBITRUM_ONE]: 'ETH',
   [ChainId.LINEA]: 'ETH',

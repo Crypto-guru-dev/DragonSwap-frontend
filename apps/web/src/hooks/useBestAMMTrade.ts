@@ -425,8 +425,8 @@ function createQuoteProvider2({ gasLimit, signal }: CreateQuoteProviderParams) {
     gasLimit,
     multicallConfigs: {
       ...BATCH_MULTICALL_CONFIGS,
-      [ChainId.BYTE_TESTNET]: {
-        ...BATCH_MULTICALL_CONFIGS[ChainId.BYTE_TESTNET],
+      [ChainId.SEPOLIA]: {
+        ...BATCH_MULTICALL_CONFIGS[ChainId.SEPOLIA],
         defaultConfig: {
           gasLimitPerCall: 1_000_000,
         },

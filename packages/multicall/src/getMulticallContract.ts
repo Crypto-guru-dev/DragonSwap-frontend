@@ -22,5 +22,5 @@ export function getMulticallContract({
 }
 
 export function getMulticall3ContractAddress(chainId?: ChainId): Address {
-  return MULTICALL3_ADDRESSES[chainId || ChainId.BYTE_TESTNET] || MULTICALL3_ADDRESS
+  return MULTICALL3_ADDRESSES[chainId || ChainId.SEPOLIA] || MULTICALL3_ADDRESS
 }

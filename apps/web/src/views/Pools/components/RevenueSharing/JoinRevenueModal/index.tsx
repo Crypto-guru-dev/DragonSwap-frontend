@@ -114,7 +114,7 @@ const JoinRevenueModal: React.FunctionComponent<React.PropsWithChildren<JoinReve
           </Text>
           <InlineLink
             fontSize={12}
-            href="https://byteswap-help.gitbook.io/byteswap-document"
+            href="https://ryuswap-help.gitbook.io/ryuswap-document"
             external
           >
             {t('Learn More')}

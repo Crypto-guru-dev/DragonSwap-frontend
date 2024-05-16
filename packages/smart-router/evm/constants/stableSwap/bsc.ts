@@ -84,7 +84,7 @@ export const pools: StableSwapPool[] = [
     stableLpFeeRateOfTotalFee: 0.5,
   },
   {
-    lpSymbol: 'JIM-sdCAKE LP',
+    lpSymbol: 'DRX-sdCAKE LP',
     lpAddress: '0xB1D54d76E2cB9425Ec9c018538cc531440b55dbB',
     token: bscTokens.cake,
     quoteToken: bscTokens.sdcake,
@@ -94,7 +94,7 @@ export const pools: StableSwapPool[] = [
     stableLpFeeRateOfTotalFee: 0.5,
   },
   {
-    lpSymbol: 'JIM-mCAKE LP',
+    lpSymbol: 'DRX-mCAKE LP',
     lpAddress: '0xb9dC6396AcFFD24E0f69Dfd3231fDaeB31514D02',
     token: bscTokens.cake,
     quoteToken: bscTokens.mcake,

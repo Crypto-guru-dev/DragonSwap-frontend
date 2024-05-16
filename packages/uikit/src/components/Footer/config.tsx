@@ -8,7 +8,7 @@ export const footerLinks: FooterLinkType[] = [
     items: [
       {
         label: "Contact",
-        href: "https://byteswap-help.gitbook.io/byteswap-document/contact-us",
+        href: "https://ryuswap-help.gitbook.io/ryuswap-document/contact-us",
       },
       {
         label: "Blog",
@@ -16,11 +16,11 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Community",
-        href: "https://byteswap-help.gitbook.io/byteswap-document/contact-us/telegram",
+        href: "https://ryuswap-help.gitbook.io/ryuswap-document/contact-us/telegram",
       },
       {
         label: "CAKE",
-        href: "https://byteswap-help.gitbook.io/byteswap-document/tokenomics/cake",
+        href: "https://ryuswap-help.gitbook.io/ryuswap-document/tokenomics/cake",
       },
       {
         label: "—",
@@ -37,15 +37,15 @@ export const footerLinks: FooterLinkType[] = [
     items: [
       {
         label: "Customer",
-        href: "Support https://byteswap-help.gitbook.io/byteswap-document/contact-us/customer-support",
+        href: "Support https://ryuswap-help.gitbook.io/ryuswap-document/contact-us/customer-support",
       },
       {
         label: "Troubleshooting",
-        href: "https://byteswap-help.gitbook.io/byteswap-document/help/troubleshooting",
+        href: "https://ryuswap-help.gitbook.io/ryuswap-document/help/troubleshooting",
       },
       {
         label: "Guides",
-        href: "https://byteswap-help.gitbook.io/byteswap-document/get-started",
+        href: "https://ryuswap-help.gitbook.io/ryuswap-document/get-started",
       },
     ],
   },
@@ -58,7 +58,7 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Documentation",
-        href: "https://byteswap-help.gitbook.io/byteswap-document",
+        href: "https://ryuswap-help.gitbook.io/ryuswap-document",
       },
       {
         label: "Bug Bounty",
@@ -66,11 +66,11 @@ export const footerLinks: FooterLinkType[] = [
       },
       {
         label: "Audits",
-        href: "https://byteswap-help.gitbook.io/byteswap-document",
+        href: "https://ryuswap-help.gitbook.io/ryuswap-document",
       },
       {
         label: "Careers",
-        href: "https://byteswap-help.gitbook.io/byteswap-document",
+        href: "https://ryuswap-help.gitbook.io/ryuswap-document",
       },
     ],
   },

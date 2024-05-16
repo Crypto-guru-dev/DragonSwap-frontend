@@ -12,7 +12,7 @@ const enable = true
 
 const GlobalCheckClaimStatus: React.FC<React.PropsWithChildren<GlobalCheckClaimStatusProps>> = (props) => {
   const { account, chainId } = useAccountActiveChain()
-  if (!enable || chainId !== ChainId.BYTE_TESTNET || !account) {
+  if (!enable || chainId !== ChainId.SEPOLIA || !account) {
     return null
   }
   return <GlobalCheckClaim key={account} {...props} />

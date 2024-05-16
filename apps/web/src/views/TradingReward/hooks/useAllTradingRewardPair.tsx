@@ -144,8 +144,8 @@ const initialAllTradingRewardState = {
 }
 
 const useAllTradingRewardPair = ({ status, type }: UseAllTradingRewardPairProps): AllTradingRewardPair => {
-  const tradingRewardContract = useTradingRewardContract({ chainId: ChainId.BYTE_TESTNET })
-  const tradingRewardTopTradersContract = useTradingRewardTopTraderContract({ chainId: ChainId.BYTE_TESTNET })
+  const tradingRewardContract = useTradingRewardContract({ chainId: ChainId.SEPOLIA })
+  const tradingRewardTopTradersContract = useTradingRewardTopTraderContract({ chainId: ChainId.SEPOLIA })
   const contract = type === RewardType.CAKE_STAKERS ? tradingRewardContract : tradingRewardTopTradersContract
 
   const { data: allPairs, isLoading } = useQuery(

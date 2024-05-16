@@ -8,7 +8,7 @@ export const SUPPORTED_CHAIN_IDS = [
   ChainId.BASE,
   // ChainId.POLYGON_ZKEVM,
   ChainId.ZKSYNC,
-  ChainId.BYTE_TESTNET
+  ChainId.SEPOLIA
 ] as const
 
 export type SupportedChainId = (typeof SUPPORTED_CHAIN_IDS)[number]

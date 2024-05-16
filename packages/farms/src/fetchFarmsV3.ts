@@ -39,7 +39,7 @@ export async function farmV3FetchFarms({
 }) {
   const [poolInfos, cakePrice, v3PoolData] = await Promise.all([
     fetchPoolInfos(farms, chainId, provider, masterChefAddress),
-    provider({ chainId: ChainId.BYTE_TESTNET })
+    provider({ chainId: ChainId.SEPOLIA })
       .readContract({
         abi: chainlinkAbi,
         address: '0xb52D862A2101e7b2026d52c273F3AAF1209afe7F',

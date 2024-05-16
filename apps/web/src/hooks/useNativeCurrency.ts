@@ -9,7 +9,7 @@ export default function useNativeCurrency(): NativeCurrency {
     try {
       return Native.onChain(chainId)
     } catch (e) {
-      return Native.onChain(ChainId.BYTE_TESTNET)
+      return Native.onChain(ChainId.SEPOLIA)
     }
   }, [chainId])
 }

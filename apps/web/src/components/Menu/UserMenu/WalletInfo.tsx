@@ -49,12 +49,12 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowNativeBalance, onDismiss 
   const { t } = useTranslation()
   const { account, chainId, chain } = useActiveWeb3React()
   const { domainName } = useDomainNameForAddress(account)
-  const isBSC = chainId === ChainId.BYTE_TESTNET
-  const bnbBalance = useBalance({ address: account, chainId: ChainId.BYTE_TESTNET })
+  const isBSC = chainId === ChainId.SEPOLIA
+  const bnbBalance = useBalance({ address: account, chainId: ChainId.SEPOLIA })
   const nativeBalance = useBalance({ address: account, enabled: !isBSC })
   const native = useNativeCurrency()
   const wNativeToken = !isBSC ? WNATIVE[chainId] : null
-  const wBNBToken = WNATIVE[ChainId.BYTE_TESTNET]
+  const wBNBToken = WNATIVE[ChainId.SEPOLIA]
   const { balance: wNativeBalance, fetchStatus: wNativeFetchStatus } = useTokenBalance(wNativeToken?.address)
   const { balance: wBNBBalance, fetchStatus: wBNBFetchStatus } = useTokenBalance(wBNBToken?.address, true)
   const { balance: cakeBalance, fetchStatus: cakeFetchStatus } = useBSCCakeBalance()
@@ -192,9 +192,9 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowNativeBalance, onDismiss 
             {getBlockExploreName(ChainId.BSC)}
           </ScanLink>
         </Flex> */}
-        {chainId === 1919 ? (
+        {chainId === 11155111 ? (
           <Flex alignItems="center" justifyContent="space-between">
-            <Text color="textSubtle">BEXC {t('Balance')}</Text>
+            <Text color="textSubtle">ETH {t('Balance')}</Text>
             {!bnbBalance.isFetched ? (
               <Skeleton height="22px" width="60px" />
             ) : (
@@ -222,7 +222,7 @@ const WalletInfo: React.FC<WalletInfoProps> = ({ hasLowNativeBalance, onDismiss 
         ) : null}
         {wBNBBalance.gt(0) && (
           <Flex alignItems="center" justifyContent="space-between">
-            <Text color="textSubtle">WBEXC {t('Balance')}</Text>
+            <Text color="textSubtle">WETH {t('Balance')}</Text>
             {wBNBFetchStatus !== FetchStatus.Fetched ? (
               <Skeleton height="22px" width="60px" />
             ) : (

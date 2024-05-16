@@ -12,7 +12,7 @@ const useBlockCountdown = (blockNumber: number) => {
 
   useEffect(() => {
     const startCountdown = async () => {
-      const bscClient = publicClient({ chainId: ChainId.BYTE_TESTNET })
+      const bscClient = publicClient({ chainId: ChainId.SEPOLIA })
       const currentBlock = await bscClient.getBlockNumber()
 
       if (blockNumber > currentBlock) {

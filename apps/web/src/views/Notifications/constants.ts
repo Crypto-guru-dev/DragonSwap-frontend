@@ -79,7 +79,7 @@ export const PUBLIC_VAPID_KEY = process.env.NEXT_PUBLIC_VAPID_KEY ?? ''
 export const Events: { [event in keyof typeof ResponseEvents]: EventInformation } = {
   [ResponseEvents.NotificationsEnabled]: {
     title: 'Notifications Enabled',
-    message: () => 'You can now opt-in to byteswap web notifications',
+    message: () => 'You can now opt-in to ryuswap web notifications',
   },
   [ResponseEvents.NotificationsEnabledError]: {
     title: 'Error Enabling Notifications',

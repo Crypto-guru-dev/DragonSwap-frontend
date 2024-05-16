@@ -12,7 +12,7 @@ export const useCakeEmissionPerBlock = (inView?: boolean) => {
   const { data: emissionsPerBlock } = useContractRead({
     abi: masterChefV2ABI,
     address: masterChefAddress,
-    chainId: ChainId.BYTE_TESTNET,
+    chainId: ChainId.SEPOLIA,
     functionName: 'jimPerBlockToBurn',
     enabled: inView,
     select: (d) => {

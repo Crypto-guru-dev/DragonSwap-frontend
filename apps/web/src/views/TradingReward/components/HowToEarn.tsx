@@ -97,7 +97,7 @@ const HowToEarn = () => {
       </Box>
       <LinkExternal
         external
-        href="https://byteswap-help.gitbook.io/byteswap-document"
+        href="https://ryuswap-help.gitbook.io/ryuswap-document"
         margin={['auto', 'auto', 'auto', '42px auto 0 auto']}
       >
         {t('Learn More')}

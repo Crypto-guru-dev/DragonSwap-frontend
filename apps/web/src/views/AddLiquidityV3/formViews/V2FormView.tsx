@@ -108,7 +108,7 @@ export default function V2FormView({
                 )}
               </MessageText>
               <LinkExternal
-                href="https://byteswap-help.gitbook.io/byteswap-document"
+                href="https://ryuswap-help.gitbook.io/ryuswap-document"
                 mt="0.25rem"
               >
                 {t('Learn more how to fix')}

@@ -51,7 +51,7 @@ const fetchFarmCalls = (farm: SerializedFarm, chainId: number) => {
   ] as const
 }
 
-export const fetchPublicFarmsData = async (farms: SerializedFarmConfig[], chainId = ChainId.BYTE_TESTNET) => {
+export const fetchPublicFarmsData = async (farms: SerializedFarmConfig[], chainId = ChainId.SEPOLIA) => {
   const farmCalls = farms.flatMap((farm) => fetchFarmCalls(farm, chainId))
   const client = publicClient({ chainId })
   const farmMultiCallResult = await client.multicall({

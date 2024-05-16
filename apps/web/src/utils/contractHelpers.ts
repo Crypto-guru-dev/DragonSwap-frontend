@@ -101,7 +101,7 @@ import { Address, erc20ABI, erc721ABI } from 'wagmi'
 export const getContract = <TAbi extends Abi | unknown[], TWalletClient extends WalletClient>({
   abi,
   address,
-  chainId = ChainId.BYTE_TESTNET,
+  chainId = ChainId.SEPOLIA,
   publicClient,
   signer,
 }: {
@@ -149,7 +149,7 @@ export const getPointCenterIfoContract = (signer?: WalletClient) => {
 export const getCakeContract = (chainId?: number) => {
   return getContract({
     abi: erc20ABI,
-    address: chainId ? CAKE[chainId]?.address : CAKE[ChainId.BYTE_TESTNET].address,
+    address: chainId ? CAKE[chainId]?.address : CAKE[ChainId.SEPOLIA].address,
     chainId,
   })
 }

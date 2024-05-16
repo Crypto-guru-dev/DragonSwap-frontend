@@ -11,7 +11,7 @@ export const swapSectionData = (t: TranslateFunction): SalesSectionProps => ({
     external: false,
   },
   secondaryButton: {
-    to: 'https://byteswap-help.gitbook.io/byteswap-document',
+    to: 'https://ryuswap-help.gitbook.io/ryuswap-document',
     text: t('Learn'),
     external: true,
   },
@@ -35,7 +35,7 @@ export const earnSectionData = (t: TranslateFunction): SalesSectionProps => ({
     external: false,
   },
   secondaryButton: {
-    to: 'https://byteswap-help.gitbook.io/byteswap-document',
+    to: 'https://ryuswap-help.gitbook.io/ryuswap-document',
     text: t('Learn'),
     external: true,
   },
@@ -61,7 +61,7 @@ export const cakeSectionData = (t: TranslateFunction): SalesSectionProps => ({
     external: false,
   },
   secondaryButton: {
-    to: 'https://byteswap-help.gitbook.io/byteswap-document',
+    to: 'https://ryuswap-help.gitbook.io/ryuswap-document',
     text: t('Learn'),
     external: true,
   },

@@ -118,7 +118,7 @@ function ImportToken({ tokens, handleCurrencySelect }: ImportProps) {
                     {t('View on %site%', {
                       site: getBlockExploreName(token.chainId),
                     })}
-                    {token.chainId === ChainId.BYTE_TESTNET && <BscScanIcon color="primary" ml="4px" />})
+                    {token.chainId === ChainId.SEPOLIA && <BscScanIcon color="primary" ml="4px" />})
                   </Link>
                 </>
               )}

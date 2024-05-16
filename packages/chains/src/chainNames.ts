@@ -18,7 +18,7 @@ export const chainNames: Record<ChainId, string> = {
   [ChainId.BASE]: 'base',
   [ChainId.BASE_TESTNET]: 'baseTestnet',
   // [ChainId.BYTE]: 'byte',
-  [ChainId.BYTE_TESTNET]: 'byteTestnet',
+  [ChainId.SEPOLIA]: 'byteTestnet',
   [ChainId.SCROLL_SEPOLIA]: 'scrollSepolia',
 }
 
@@ -50,5 +50,5 @@ export const defiLlamaChainNames: Record<ChainId, string> = {
   [ChainId.LINEA]: 'linea',
   [ChainId.BASE]: 'base',
   // [ChainId.BYTE]: 'byte',
-  [ChainId.BYTE_TESTNET]: 'byteTestnet',
+  [ChainId.SEPOLIA]: 'byteTestnet',
 }

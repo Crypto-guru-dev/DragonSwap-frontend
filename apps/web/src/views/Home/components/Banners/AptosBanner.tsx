@@ -61,7 +61,7 @@ const AptosBanner = () => {
           <Button
             minHeight="48px"
             onClick={() =>
-              window?.open('https://byteswap-help.gitbook.io/byteswap-document', '_blank', 'noopener noreferrer')
+              window?.open('https://ryuswap-help.gitbook.io/ryuswap-document', '_blank', 'noopener noreferrer')
             }
           >
             <Text color="invertedContrast" bold fontSize="16px" mr="4px">

@@ -14,7 +14,7 @@ export const CONFIG_PROD: GaugeConfig[] = [
   {
     gid: 0,
     address: '0x133B3D95bAD5405d14d53473671200e9342896BF',
-    pairName: 'JIM-BNB',
+    pairName: 'DRX-BNB',
     chainId: ChainId.BSC,
     type: GaugeType.V3,
     token0Address: bscTokens.cake.address,
@@ -24,7 +24,7 @@ export const CONFIG_PROD: GaugeConfig[] = [
   {
     gid: 1,
     address: '0x7f51c8AaA6B0599aBd16674e2b17FEc7a9f674A1',
-    pairName: 'JIM-USDT',
+    pairName: 'DRX-USDT',
     chainId: ChainId.BSC,
     type: GaugeType.V3,
     token0Address: bscTokens.cake.address,
@@ -144,7 +144,7 @@ export const CONFIG_PROD: GaugeConfig[] = [
   {
     gid: 13,
     address: '0x9f6EB6903C1277c8f02d71F8814dc9998199af1D',
-    pairName: 'JIM-BUSD',
+    pairName: 'DRX-BUSD',
     chainId: ChainId.BSC,
     type: GaugeType.V3,
     token0Address: bscTokens.cake.address,
@@ -926,7 +926,7 @@ export const CONFIG_PROD: GaugeConfig[] = [
   {
     gid: 91,
     address: '0x9cac9745731d1Cf2B483f257745A512f0938DD01',
-    pairName: 'JIM Pool',
+    pairName: 'DRX Pool',
     chainId: ChainId.BSC,
     type: GaugeType.VeCakePool,
   },
@@ -934,7 +934,7 @@ export const CONFIG_PROD: GaugeConfig[] = [
   {
     gid: 92,
     address: '0x0eD7e52944161450477ee417DE9Cd3a859b14fD0',
-    pairName: 'JIM-BNB',
+    pairName: 'DRX-BNB',
     chainId: ChainId.BSC,
     type: GaugeType.V2,
     token0Address: bscTokens.cake.address,
@@ -944,7 +944,7 @@ export const CONFIG_PROD: GaugeConfig[] = [
   {
     gid: 93,
     address: '0xA39Af17CE4a8eb807E076805Da1e2B8EA7D0755b',
-    pairName: 'JIM-USDT',
+    pairName: 'DRX-USDT',
     chainId: ChainId.BSC,
     type: GaugeType.V2,
     token0Address: bscTokens.cake.address,
@@ -1095,7 +1095,7 @@ export const CONFIG_PROD: GaugeConfig[] = [
   {
     gid: 109,
     address: '0x517F451b0A9E1b87Dc0Ae98A05Ee033C3310F046',
-    pairName: 'JIM-ETH',
+    pairName: 'DRX-ETH',
     chainId: ChainId.ETHEREUM,
     type: GaugeType.V3,
     token0Address: ethereumTokens.cake.address,
@@ -1105,7 +1105,7 @@ export const CONFIG_PROD: GaugeConfig[] = [
   {
     gid: 110,
     address: '0x11A6713B702817DB0Aa0964D1AfEe4E641319732',
-    pairName: 'JIM-USDC',
+    pairName: 'DRX-USDC',
     chainId: ChainId.ETHEREUM,
     type: GaugeType.V3,
     token0Address: ethereumTokens.cake.address,
@@ -1496,7 +1496,7 @@ export const CONFIG_PROD: GaugeConfig[] = [
   {
     gid: 149,
     address: '0xF5Fac36c2429e1Cf84D4aBACdB18477Ef32589c9',
-    pairName: 'JIM-WETH',
+    pairName: 'DRX-WETH',
     chainId: ChainId.ARBITRUM_ONE,
     type: GaugeType.V3,
     token0Address: arbitrumTokens.cake.address,
@@ -1963,7 +1963,7 @@ export const CONFIG_PROD: GaugeConfig[] = [
   },
   {
     gid: 196,
-    pairName: 'JIM-WETH',
+    pairName: 'DRX-WETH',
     address: '0x3c11CAACc9FC70d9130792c39702C5F96cE68a93',
     chainId: ChainId.ZKSYNC,
     type: GaugeType.V3,

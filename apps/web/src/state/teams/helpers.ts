@@ -49,7 +49,7 @@ export const getTeams = async (): Promise<TeamsById> => {
           args: [BigInt(i + 1)] as const,
         } as const),
     )
-    const client = publicClient({ chainId: ChainId.BYTE_TESTNET })
+    const client = publicClient({ chainId: ChainId.SEPOLIA })
     const teamData = await client.multicall({
       contracts: calls,
       allowFailure: false,

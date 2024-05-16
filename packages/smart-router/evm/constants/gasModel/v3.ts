@@ -6,7 +6,7 @@ export const COST_PER_UNINIT_TICK = 0n
 export const BASE_SWAP_COST_V3 = (id: ChainId): bigint => {
   switch (id) {
     case ChainId.BSC:
-    case ChainId.BYTE_TESTNET:
+    case ChainId.SEPOLIA:
     case ChainId.BSC_TESTNET:
     case ChainId.ETHEREUM:
     case ChainId.GOERLI:
@@ -24,7 +24,7 @@ export const BASE_SWAP_COST_V3 = (id: ChainId): bigint => {
 export const COST_PER_INIT_TICK = (id: ChainId): bigint => {
   switch (id) {
     case ChainId.BSC:
-    case ChainId.BYTE_TESTNET:
+    case ChainId.SEPOLIA:
     case ChainId.BSC_TESTNET:
     case ChainId.ETHEREUM:
     case ChainId.GOERLI:
@@ -43,7 +43,7 @@ export const COST_PER_INIT_TICK = (id: ChainId): bigint => {
 export const COST_PER_HOP_V3 = (id: ChainId): bigint => {
   switch (id) {
     case ChainId.BSC:
-    case ChainId.BYTE_TESTNET:
+    case ChainId.SEPOLIA:
     case ChainId.BSC_TESTNET:
     case ChainId.ETHEREUM:
     case ChainId.GOERLI:

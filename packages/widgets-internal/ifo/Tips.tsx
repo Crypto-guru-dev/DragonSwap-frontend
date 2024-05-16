@@ -84,7 +84,7 @@ export function InsufficientNativeVeCakeTips(props: SpaceProps) {
             )}
           </MessageText>
           <LinkMessageText bold>
-            <Link href="https://byteswap-help.gitbook.io/byteswap-document">
+            <Link href="https://ryuswap-help.gitbook.io/ryuswap-document">
               {t("Learn more")} {">>"}
             </Link>
           </LinkMessageText>

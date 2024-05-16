@@ -26,7 +26,7 @@ export default function WithdrawalMessage({ lockPeriod }: { lockPeriod: number }
             display: 'inline',
             fontSize: '14px',
           }}
-          href="https://byteswap-help.gitbook.io/byteswap-document"
+          href="https://ryuswap-help.gitbook.io/ryuswap-document"
           target="_blank"
         >
           {t('Click here for more information')}

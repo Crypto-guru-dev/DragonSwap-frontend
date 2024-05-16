@@ -1,5 +1,5 @@
 {
-  "baseUrl": "https://trade.byteswap.finance",
+  "baseUrl": "https://staging.ryuswap.com",
   "pluginsFile": false,
   "fixturesFolder": false,
   "supportFile": "cypress/support/index.js",

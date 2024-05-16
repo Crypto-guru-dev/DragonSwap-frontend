@@ -39,7 +39,7 @@ export const bscTestnetTokens = {
     ChainId.BSC_TESTNET,
     '0x8d008B313C1d6C7fE2982F62d32Da7507cF43551',
     18,
-    'JIM2',
+    'DRX2',
     'PancakeSwap Token',
     'https://pancakeswap.finance/',
   ),

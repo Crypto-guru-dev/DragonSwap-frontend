@@ -27,7 +27,7 @@ export const FACTORY_ADDRESS_MAP = {
   [ChainId.OPBNB_TESTNET]: '0x776e4bD2f72de2176A59465e316335aaf8ed4E8F',
   [ChainId.BASE]: '0x02a84c1b3BBD7401a5f7fa98a384EBC70bB5749E',
   [ChainId.BASE_TESTNET]: '0x715303D2eF7dA7FFAbF637651D71FD11d41fAf7F',
-  [ChainId.BYTE_TESTNET]: '0xFCA3CF74A7491Bbed7a3fB408ae84143fbe44A67',
+  [ChainId.SEPOLIA]: '0x6226B3e9Ac6B6FB21bD186E7923ebCaD0EA0d487',
   [ChainId.SCROLL_SEPOLIA]: '0x2B3C5df29F73dbF028BA82C33e0A5A6e5800F75e',
 } as const satisfies Record<ChainId, Address>
 
@@ -51,7 +51,7 @@ export const INIT_CODE_HASH_MAP = {
   [ChainId.OPBNB_TESTNET]: INIT_CODE_HASH_ETH,
   [ChainId.BASE]: INIT_CODE_HASH_ETH,
   [ChainId.BASE_TESTNET]: '0xa5934690703a592a07e841ca29d5e5c79b5e22ed4749057bb216dc31100be1c0',
-  [ChainId.BYTE_TESTNET]: '0x2fbec6276fc715d985a715a2d6aaedf2e624204b20a33af2585b494198a85bc4',
+  [ChainId.SEPOLIA]: '0x208675046ef349a5278063ae6f43d044799a84c73e2292fb030a8b1b4ed7e540',
   [ChainId.SCROLL_SEPOLIA]: INIT_CODE_HASH_ETH,
 } as const satisfies Record<ChainId, Hash>
 
@@ -192,12 +192,12 @@ export const WETH9 = {
     'Wrapped Ether',
     'https://weth.io'
   ),
-  [ChainId.BYTE_TESTNET]: new ERC20Token(
-    ChainId.BYTE_TESTNET,
-    '0x0e2dE4cafE26105bE7C9A8748D8588e6E7DD0147',
+  [ChainId.SEPOLIA]: new ERC20Token(
+    ChainId.SEPOLIA,
+    '0xb16F35c0Ae2912430DAc15764477E179D9B9EbEa',
     18,
-    'WBEXC',
-    'Wrapped BEXC',
+    'WETH',
+    'Wrapped ETH',
     // 'https://weth.io'
   ),
 }
@@ -263,11 +263,11 @@ export const WNATIVE = {
   [ChainId.BASE]: WETH9[ChainId.BASE],
   [ChainId.BASE_TESTNET]: WETH9[ChainId.BASE_TESTNET],
   [ChainId.SCROLL_SEPOLIA]: WETH9[ChainId.SCROLL_SEPOLIA],
-  [ChainId.BYTE_TESTNET]: WETH9[ChainId.BYTE_TESTNET],
+  [ChainId.SEPOLIA]: WETH9[ChainId.SEPOLIA],
 } satisfies Record<ChainId, ERC20Token>
 
 const ETHER = { name: 'Ether', symbol: 'ETH', decimals: 18 } as const
-const BEXC = { name: 'BEXC', symbol: 'BEXC', decimals: 18 } as const
+const ETH = { name: 'ETH', symbol: 'ETH', decimals: 18 } as const
 const BNB = {
   name: 'Binance Chain Native Token',
   symbol: 'BNB',
@@ -276,7 +276,7 @@ const BNB = {
 
 export const NATIVE = {
   [ChainId.ETHEREUM]: ETHER,
-  [ChainId.BYTE_TESTNET]: BEXC,
+  [ChainId.SEPOLIA]: ETH,
   [ChainId.GOERLI]: { name: 'Goerli Ether', symbol: 'GOR', decimals: 18 },
   [ChainId.BSC]: BNB,
   [ChainId.BSC_TESTNET]: {

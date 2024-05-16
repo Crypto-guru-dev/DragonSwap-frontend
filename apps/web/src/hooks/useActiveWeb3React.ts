@@ -22,7 +22,7 @@ export function useNetworkConnectorUpdater() {
     if (loading || !router.isReady) return setPrevChainId()
     const parsedQueryChainId = getChainId(router.query.chain as string)
 
-    if (!parsedQueryChainId && chainId === ChainId.BYTE_TESTNET) return setPrevChainId()
+    if (!parsedQueryChainId && chainId === ChainId.SEPOLIA) return setPrevChainId()
     if (parsedQueryChainId !== chainId && isChainSupported(chainId)) {
       const removeQueriesFromPath =
         previousChainIdRef.current !== chainId &&

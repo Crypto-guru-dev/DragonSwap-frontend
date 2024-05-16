@@ -92,7 +92,7 @@ const BinanceW3WConnector = getWagmiConnector()
 export const binanceWeb3WalletConnector = new BinanceW3WConnector({
   chains,
   options: {
-    chainId: ChainId.BYTE_TESTNET,
+    chainId: ChainId.SEPOLIA,
   },
 })
 

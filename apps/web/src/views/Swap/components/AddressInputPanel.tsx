@@ -111,7 +111,7 @@ export default function AddressInputPanel({
                   {t('View on %site%', {
                     site: getBlockExploreName(chainId),
                   })}
-                  {chainId === ChainId.BYTE_TESTNET && <BscScanIcon color="primary" ml="4px" />})
+                  {chainId === ChainId.SEPOLIA && <BscScanIcon color="primary" ml="4px" />})
                 </Link>
               )}
             </RowBetween>

@@ -21,7 +21,7 @@ export function DisclaimerCheckBox({
             display: 'inline',
             fontSize: '14px',
           }}
-          href="https://byteswap-help.gitbook.io/byteswap-document"
+          href="https://ryuswap-help.gitbook.io/ryuswap-document"
           target="_blank"
         >
           the Terms & Conditions.

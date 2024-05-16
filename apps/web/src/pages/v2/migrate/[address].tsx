@@ -31,4 +31,4 @@ function MigratePage() {
 
 export default MigratePage
 
-MigratePage.chains = [ChainId.BYTE_TESTNET, ChainId.ETHEREUM, ChainId.BSC_TESTNET, ChainId.GOERLI]
+MigratePage.chains = [ChainId.SEPOLIA, ChainId.ETHEREUM, ChainId.BSC_TESTNET, ChainId.GOERLI]

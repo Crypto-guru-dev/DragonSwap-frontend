@@ -6,7 +6,7 @@ import { getAddress } from "viem";
 
 const mapping: { [key: number]: string } = {
   [ChainId.BSC]: "smartchain",
-  [ChainId.BYTE_TESTNET]: "byteTestnet",
+  [ChainId.SEPOLIA]: "byteTestnet",
   [ChainId.ETHEREUM]: "ethereum",
   [ChainId.POLYGON_ZKEVM]: "polygonzkevm",
   [ChainId.ARBITRUM_ONE]: "arbitrum",
@@ -19,7 +19,7 @@ const mapping: { [key: number]: string } = {
 export const getTokenLogoURL = memoize(
   (token?: Token) => {
     if (token && mapping[token.chainId]) {
-      return `https://asset.byteswap.finance/images/${mapping[token.chainId]}/${getAddress(
+      return `https://assets.ryuswap.com/images/${mapping[token.chainId]}/${getAddress(
         token.address
       )}.png`;
     }
@@ -31,7 +31,7 @@ export const getTokenLogoURL = memoize(
 export const getTokenLogoURLByAddress = memoize(
   (address?: string, chainId?: number) => {
     if (address && chainId && mapping[chainId]) {
-      return `https://asset.byteswap.finance/images/${mapping[chainId]}/${getAddress(
+      return `https://assets.ryuswap.com/images/${mapping[chainId]}/${getAddress(
         address
       )}.png`;
     }
@@ -49,17 +49,17 @@ const chainName: { [key: number]: string } = {
   [ChainId.LINEA]: "linea",
   [ChainId.BASE]: "base",
   [ChainId.OPBNB]: "opbnb",
-  [ChainId.BYTE_TESTNET]: "byteTestnet",
+  [ChainId.SEPOLIA]: "byteTestnet",
 };
 
 // TODO: move to utils or token-list
 export const getTokenListBaseURL = (chainId: number) =>
-  `https://asset.byteswap.finance/images/${chainName[chainId]}`;
+  `https://assets.ryuswap.com/images/${chainName[chainId]}`;
 
 export const getTokenListTokenUrl = (token: Token) =>
   Object.keys(chainName).includes(String(token.chainId))
-    ? `https://asset.byteswap.finance/images/${
-        token.chainId === ChainId.BYTE_TESTNET ? "" : `${chainName[token.chainId]}/`
+    ? `https://assets.ryuswap.com/images/${
+        token.chainId === ChainId.SEPOLIA ? "" : `${chainName[token.chainId]}/`
       }${token.address}.png`
     : null;
 
@@ -69,7 +69,7 @@ const commonCurrencySymbols = [
   bscTokens.cake,
   ethereumTokens.wbtc,
   ethereumTokens.weth,
-  NATIVE[ChainId.BYTE_TESTNET],
+  NATIVE[ChainId.SEPOLIA],
   bscTokens.busd,
   ethereumTokens.dai,
 ].map(({ symbol }) => symbol);
@@ -82,7 +82,7 @@ export const getCommonCurrencyUrl = memoize(
 export const getCommonCurrencyUrlBySymbol = memoize(
   (symbol?: string): string | undefined =>
     symbol && commonCurrencySymbols.includes(symbol)
-      ? `https://asset.byteswap.finance/web/tokens/symbol/${symbol.toLocaleLowerCase()}.png`
+      ? `https://assets.ryuswap.com/web/tokens/symbol/${symbol.toLocaleLowerCase()}.png`
       : undefined,
   (symbol?: string) => `logoUrls#symbol#${symbol}`
 );

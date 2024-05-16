@@ -57,7 +57,7 @@ const ChartDisclaimer: React.FC<React.PropsWithChildren<InjectedModalProps>> = (
           {t("Only the price from Chainlink (shown on the cards) determines the round's result.")}
         </Text>
         <LinkExternal
-          href="https://byteswap-help.gitbook.io/byteswap-document"
+          href="https://ryuswap-help.gitbook.io/ryuswap-document"
           external
           mb="24px"
         >

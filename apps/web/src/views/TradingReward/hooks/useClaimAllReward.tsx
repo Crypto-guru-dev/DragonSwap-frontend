@@ -26,8 +26,8 @@ export const useClaimAllReward = ({ campaignIds, unclaimData, qualification, typ
   const { toastSuccess } = useToast()
   const queryClient = useQueryClient()
   const { fetchWithCatchTxError, loading: isPending } = useCatchTxError()
-  const tradingRewardContract = useTradingRewardContract({ chainId: ChainId.BYTE_TESTNET })
-  const tradingRewardTopTradersContract = useTradingRewardTopTraderContract({ chainId: ChainId.BYTE_TESTNET })
+  const tradingRewardContract = useTradingRewardContract({ chainId: ChainId.SEPOLIA })
+  const tradingRewardTopTradersContract = useTradingRewardTopTraderContract({ chainId: ChainId.SEPOLIA })
   const contract = type === RewardType.CAKE_STAKERS ? tradingRewardContract : tradingRewardTopTradersContract
 
   const handleClaim = useCallback(async () => {

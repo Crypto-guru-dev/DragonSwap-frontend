@@ -12,7 +12,7 @@ const useFarmBoosterConstants = () => {
   const { data, status } = useQuery(
     ['farmBoosterConstants'],
     async () => {
-      return publicClient({ chainId: ChainId.BYTE_TESTNET }).multicall({
+      return publicClient({ chainId: ChainId.SEPOLIA }).multicall({
         contracts: [
           {
             address: bCakeFarmBoosterAddress,

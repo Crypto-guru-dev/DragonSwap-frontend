@@ -40,7 +40,7 @@ const Congratulations = () => {
             {t('Try out our Perpetuals Platform')}
           </Button>
         </Link>
-        <Link external href="https://byteswap-help.gitbook.io/byteswap-document" width="100% !important">
+        <Link external href="https://ryuswap-help.gitbook.io/ryuswap-document" width="100% !important">
           <Button width="100%" variant="secondary">
             {t('Learn More')}
           </Button>

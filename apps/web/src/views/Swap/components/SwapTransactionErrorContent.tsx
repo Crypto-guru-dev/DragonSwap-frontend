@@ -30,7 +30,7 @@ export const SwapTransactionErrorContent = ({ onDismiss, message, openSettingMod
             </Text>
           </Text>
           <LinkExternal
-            href="https://byteswap-help.gitbook.io/byteswap-document"
+            href="https://ryuswap-help.gitbook.io/ryuswap-document"
             style={{ width: '100%', justifyContent: 'center' }}
           >
             {t('What are the potential issues with the token?')}

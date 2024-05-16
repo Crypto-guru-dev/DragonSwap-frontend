@@ -49,7 +49,7 @@ export const CHAIN_REFRESH_TIME = {
   [ChainId.BASE]: 6_000,
   [ChainId.BASE_TESTNET]: 6_000,
   [ChainId.SCROLL_SEPOLIA]: 6_000,
-  [ChainId.BYTE_TESTNET]: 15_000,
+  [ChainId.SEPOLIA]: 12_000,
 } as const satisfies Record<ChainId, number>
 
 // used for display in the default list when adding liquidity
@@ -76,7 +76,7 @@ export const SUGGESTED_BASES: ChainTokenList = {
   [ChainId.BASE]: [baseTokens.usdc, baseTokens.weth],
   [ChainId.BASE_TESTNET]: [baseTestnetTokens.usdc, baseTestnetTokens.weth],
   [ChainId.SCROLL_SEPOLIA]: [scrollSepoliaTokens.usdc, scrollSepoliaTokens.weth],
-  [ChainId.BYTE_TESTNET]: [byteTestnetTokens.usdt, byteTestnetTokens.weth],
+  [ChainId.SEPOLIA]: [byteTestnetTokens.usdt, byteTestnetTokens.weth],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
@@ -98,7 +98,7 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   [ChainId.BASE]: [baseTokens.usdc, baseTokens.weth],
   [ChainId.BASE_TESTNET]: [baseTestnetTokens.usdc, baseTestnetTokens.weth],
   [ChainId.SCROLL_SEPOLIA]: [scrollSepoliaTokens.usdc, scrollSepoliaTokens.weth],
-  [ChainId.BYTE_TESTNET]: [byteTestnetTokens.usdt, byteTestnetTokens.weth],
+  [ChainId.SEPOLIA]: [byteTestnetTokens.usdt, byteTestnetTokens.weth],
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
@@ -127,7 +127,7 @@ export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } 
   [ChainId.BASE]: [[baseTokens.usdc, baseTokens.weth]],
   [ChainId.BASE_TESTNET]: [[baseTestnetTokens.usdc, baseTestnetTokens.weth]],
   [ChainId.SCROLL_SEPOLIA]: [[scrollSepoliaTokens.usdc, scrollSepoliaTokens.weth]],
-  [ChainId.BYTE_TESTNET]: [[byteTestnetTokens.usdt, byteTestnetTokens.weth]],
+  [ChainId.SEPOLIA]: [[byteTestnetTokens.usdt, byteTestnetTokens.weth]],
 }
 
 export const BIG_INT_ZERO = 0n
@@ -164,6 +164,6 @@ export const DEFAULT_OUTPUT_CURRENCY = '0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE
 export const GELATO_HANDLER = 'pancakeswap'
 export const GENERIC_GAS_LIMIT_ORDER_EXECUTION = 500000n
 
-export const LIMIT_ORDERS_DOCS_URL = 'https://byteswap-help.gitbook.io/byteswap-document'
+export const LIMIT_ORDERS_DOCS_URL = 'https://ryuswap-help.gitbook.io/ryuswap-document'
 
 export const EXCHANGE_PAGE_PATHS = ['/swap', '/limit-orders', 'liquidity', '/add', '/find', '/remove']

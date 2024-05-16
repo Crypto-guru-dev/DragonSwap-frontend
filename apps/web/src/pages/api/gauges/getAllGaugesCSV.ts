@@ -35,7 +35,7 @@ const handler: NextApiHandler = async (req, res) => {
   try {
     const gauges = await getAllGauges(
       getViemClients({
-        chainId: testnet ? ChainId.BYTE_TESTNET : ChainId.BYTE_TESTNET,
+        chainId: testnet ? ChainId.SEPOLIA : ChainId.SEPOLIA,
       }),
       {
         testnet,

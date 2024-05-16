@@ -18,15 +18,15 @@ export const NOTIFICATION_HUB_BASE_URL = 'https://notification-hub.pancakeswap.c
  */
 export const GRAPH_API_PREDICTION_V1 = 'https://api.thegraph.com/subgraphs/name/pancakeswap/prediction'
 
-export const INFO_CLIENT = 'https://subgraph.bytemx.io/subgraphs/name/byteswap-exchange'
-export const V3_BSC_INFO_CLIENT = `https://subgraph.bytemx.io/subgraphs/name/byteswap-exchange-v3`
+export const INFO_CLIENT = 'https://subgraph.bytemx.io/subgraphs/name/ryuswap-exchange'
+export const V3_BSC_INFO_CLIENT = `https://subgraph.bytemx.io/subgraphs/name/ryuswap-exchange-v3`
 
 // export const V3_BSC_INFO_CLIENT = `https://open-platform.nodereal.io/${
 //   process.env.NEXT_PUBLIC_NODE_REAL_API_INFO || process.env.NEXT_PUBLIC_NODE_REAL_API_ETH
 // }/pancakeswap-v3/graphql`
 
 export const INFO_CLIENT_ETH = 'https://api.thegraph.com/subgraphs/name/pancakeswap/exhange-eth'
-export const BLOCKS_CLIENT = BLOCKS_SUBGRAPHS[ChainId.BYTE_TESTNET]
+export const BLOCKS_CLIENT = BLOCKS_SUBGRAPHS[ChainId.SEPOLIA]
 export const BLOCKS_CLIENT_ETH = BLOCKS_SUBGRAPHS[ChainId.ETHEREUM]
 export const BLOCKS_CLIENT_POLYGON_ZKEVM = BLOCKS_SUBGRAPHS[ChainId.POLYGON_ZKEVM]
 export const BLOCKS_CLIENT_ZKSYNC = BLOCKS_SUBGRAPHS[ChainId.ZKSYNC]
@@ -50,9 +50,9 @@ export const INFO_CLIENT_WITH_CHAIN = V2_SUBGRAPHS
 
 export const BLOCKS_CLIENT_WITH_CHAIN = BLOCKS_SUBGRAPHS
 
-export const ASSET_CDN = 'https://asset.byteswap.finance'
+export const ASSET_CDN = 'https://assets.ryuswap.com'
 
-export const HERO_CDN = 'https://asset.byteswap.finance'
+export const HERO_CDN = 'https://assets.ryuswap.com'
 
 export const V3_SUBGRAPH_URLS = V3_SUBGRAPHS
 

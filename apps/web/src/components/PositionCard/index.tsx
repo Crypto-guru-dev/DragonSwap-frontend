@@ -237,7 +237,7 @@ function MinimalPositionCardView({
                   style={{ display: 'inline' }}
                   ml="4px"
                   external
-                  href="https://byteswap-help.gitbook.io/byteswap-document"
+                  href="https://ryuswap-help.gitbook.io/ryuswap-document"
                 >
                   {t('here.')}
                 </Link>

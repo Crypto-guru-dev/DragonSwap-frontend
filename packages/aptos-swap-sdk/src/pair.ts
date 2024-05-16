@@ -74,7 +74,7 @@ export class Pair {
       tokenA.chainId,
       Pair.getAddress(tokenA, tokenB),
       8,
-      'JIM-LP',
+      'DRX-LP',
       `Pancake-${token0.symbol}-${token1.symbol}-LP`
     )
   }

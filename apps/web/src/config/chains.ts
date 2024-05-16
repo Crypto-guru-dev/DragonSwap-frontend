@@ -36,30 +36,30 @@ export const getChainId = memoize((chainName: string) => {
 })
 
 export const byteTestnet = {
-  id: 1919,
-  name: 'XChain Testnet',
-  network: 'XChain',
-  nativeCurrency: { name: 'BEXC', symbol: 'BEXC', decimals: 18 },
+  id: 11155111,
+  name: 'Sepolia Testnet',
+  network: 'Sepolia',
+  nativeCurrency: { name: 'ETH', symbol: 'ETH', decimals: 18 },
   rpcUrls: {
     default: {
-      http: ['https://test-rpc.bytexc.org/'],
+      http: ['https://ethereum-sepolia-rpc.publicnode.com/'],
       // webSocket: ['wss://test-wss.bytexc.org/ws'],
     },
     public: {
-      http: ['https://test-rpc.bytexc.org/'],
+      http: ['https://ethereum-sepolia-rpc.publicnode.com/'],
       // webSocket: ['wss://test-wss.bytexc.org/ws'],
     },
   },
   blockExplorers: {
     default: {
-      name: 'ByteScan',
-      url: 'https://test.bytescan.io/',
+      name: 'Sepolia Explorer',
+      url: 'https://sepolia.etherscan.io',
     },
   },
   contracts: {
     multicall3: {
-      address: '0x72ADA9a3acb808EAE96108dA3667EA853Fec85A1',
-      blockCreated: 2970,
+      address: '0xf81A26ae65edB8f874Da67D8C3332BD8c7d7E6b4',
+      blockCreated: 5911534,
     },
   },
   testnet: true,

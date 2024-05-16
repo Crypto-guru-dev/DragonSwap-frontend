@@ -76,7 +76,7 @@ export default function ApproveLiquidityTokens({
               <InlineLink
                 external
                 fontSize={14}
-                href="https://byteswap-help.gitbook.io/byteswap-document"
+                href="https://ryuswap-help.gitbook.io/ryuswap-document"
               >
                 {' '}
                 {t('Learn More')}

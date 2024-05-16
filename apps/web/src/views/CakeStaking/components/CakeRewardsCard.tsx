@@ -207,7 +207,7 @@ export const CakeRewardsCard = ({ onDismiss }) => {
                             'Please note that after locking or updating, your shares will only update upon revenue distributions.',
                           )}
                         </Text>
-                        <LinkExternal href="https://byteswap-help.gitbook.io/byteswap-document">
+                        <LinkExternal href="https://ryuswap-help.gitbook.io/ryuswap-document">
                           <Text bold color="primary">
                             {t('Learn More')}
                           </Text>
@@ -409,7 +409,7 @@ export const CakeRewardsCard = ({ onDismiss }) => {
               <LinkExternal
                 external
                 m="8px auto auto auto"
-                href="https://byteswap-help.gitbook.io/byteswap-document"
+                href="https://ryuswap-help.gitbook.io/ryuswap-document"
               >
                 {t('Learn More')}
               </LinkExternal>

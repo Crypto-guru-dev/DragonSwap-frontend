@@ -15,7 +15,7 @@ export const LearnMoreLink: React.FC<{ withArrow?: boolean }> = ({ withArrow }) 
         fontSize: 14,
         marginLeft: 3,
       }}
-      href="https://byteswap-help.gitbook.io/byteswap-document"
+      href="https://ryuswap-help.gitbook.io/ryuswap-document"
       target="_blank"
       rel="noreferrer noopener"
     >

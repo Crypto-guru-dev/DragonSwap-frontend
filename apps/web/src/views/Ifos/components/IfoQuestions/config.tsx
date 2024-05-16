@@ -40,7 +40,7 @@ const config = [
       </Box>,
       <Box mt="1rem">
         <Trans>Learn more about iCAKE</Trans>
-        <InlineLink ml="4px" external href="https://byteswap-help.gitbook.io/byteswap-document">
+        <InlineLink ml="4px" external href="https://ryuswap-help.gitbook.io/ryuswap-document">
           <Trans>here</Trans>
         </InlineLink>
       </Box>,

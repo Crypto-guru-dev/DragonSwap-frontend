@@ -224,7 +224,7 @@ const ContributeModal: React.FC<React.PropsWithChildren<Props>> = ({
             <Link
               fontSize="12px"
               display="inline"
-              href="https://byteswap-help.gitbook.io/byteswap-document"
+              href="https://ryuswap-help.gitbook.io/ryuswap-document"
               external
             >
               {t('Read more')}

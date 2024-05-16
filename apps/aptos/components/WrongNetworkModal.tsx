@@ -27,7 +27,7 @@ export const WrongNetworkModal: React.FC = () => {
           <MessageText>{t('Unable to switch network. Please try it on your wallet')}</MessageText>
         </Message>
         <StyledLink
-          href="https://byteswap-help.gitbook.io/byteswap-document"
+          href="https://ryuswap-help.gitbook.io/ryuswap-document"
           external
         >
           <Button width="100%" variant="secondary">

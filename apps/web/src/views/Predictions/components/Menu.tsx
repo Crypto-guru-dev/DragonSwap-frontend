@@ -92,7 +92,7 @@ const Menu = () => {
                 <Button
                   variant="subtle"
                   as="a"
-                  href="https://byteswap-help.gitbook.io/byteswap-document"
+                  href="https://ryuswap-help.gitbook.io/ryuswap-document"
                   target="_blank"
                   rel="noreferrer noopener"
                   width="48px"

@@ -104,7 +104,7 @@ export const fetchPoolData = async (
   block7d: number,
   block14d: number,
   poolAddresses: string[],
-  chainName: MultiChainName = 'BYTE_TESTNET',
+  chainName: MultiChainName = 'SEPOLIA',
 ) => {
   const isStableSwap = checkIsStableSwap()
   const startBlock = isStableSwap ? STABLESWAP_SUBGRAPHS_START_BLOCK[chainName] : undefined

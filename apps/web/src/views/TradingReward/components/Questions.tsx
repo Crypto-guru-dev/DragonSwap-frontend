@@ -60,7 +60,7 @@ const Questions = () => {
                 <Link
                   style={{ display: 'inline-block' }}
                   external
-                  href="https://byteswap-help.gitbook.io/byteswap-document"
+                  href="https://ryuswap-help.gitbook.io/ryuswap-document"
                 >
                   <Text color="primary" ml="4px" as="span">
                     {t('this tutorial')}

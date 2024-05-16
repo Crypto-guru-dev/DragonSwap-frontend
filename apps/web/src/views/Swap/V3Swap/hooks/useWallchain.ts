@@ -102,7 +102,7 @@ function useWallchainSDK() {
       })
     },
     {
-      enabled: Boolean(chainId === ChainId.BYTE_TESTNET && walletClient && WALLCHAIN_ENABLED),
+      enabled: Boolean(chainId === ChainId.SEPOLIA && walletClient && WALLCHAIN_ENABLED),
       refetchOnWindowFocus: false,
       refetchOnReconnect: false,
       refetchOnMount: false,
@@ -142,7 +142,7 @@ export function useWallchainApi(
       setStatus('not-found')
       return
     }
-    if (trade.routes.length === 0 || trade.inputAmount.currency.chainId !== ChainId.BYTE_TESTNET) return
+    if (trade.routes.length === 0 || trade.inputAmount.currency.chainId !== ChainId.SEPOLIA) return
     if (lastUpdate > Date.now() - 2000) return
     const includesToken = trade.routes.some((route) => {
       const goodSrc =

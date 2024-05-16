@@ -12,6 +12,6 @@ export const SEO: DefaultSeoProps = {
   openGraph: {
     title: "ByteSwap - Everyone's Favorite DEX",
     description: 'Trade, earn, and own crypto on the all-in-one multichain DEX',
-    images: [{ url: 'https://asset.byteswap.finance/hero.png' }],
+    images: [{ url: 'https://assets.ryuswap.com/hero.png' }],
   },
 }

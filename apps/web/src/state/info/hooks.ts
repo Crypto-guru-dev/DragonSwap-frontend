@@ -330,7 +330,7 @@ export const useGetChainName = () => {
 
   const getChain = useCallback(() => {
     if (pathname.includes('eth') || query.chain === 'eth') return 'ETH'
-    return 'BYTE_TESTNET'
+    return 'SEPOLIA'
   }, [pathname, query])
   const [name, setName] = useState<MultiChainName | null>(() => getChain())
   const result = useMemo(() => name, [name])
@@ -361,12 +361,12 @@ export const useChainNameByQuery = (): MultiChainName => {
       // case 'opbnb':
       //   return 'OPBNB'
       case 'byteTestnet':
-        return 'BYTE_TESTNET'
+        return 'SEPOLIA'
       default:
-        return 'BYTE_TESTNET'
+        return 'SEPOLIA'
     }
   }, [query])
-  return 'BYTE_TESTNET'
+  return 'SEPOLIA'
 }
 
 export const useChainIdByQuery = () => {

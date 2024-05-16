@@ -14,7 +14,7 @@ import { livePools as lineaLivePools, pools as lineaPools } from './59144'
 import { livePools as baseLivePools, pools as basePools } from './8453'
 import { livePools as baseTestnetLivePools, pools as baseTestnetPools } from './84531'
 import { livePools as bscTestnetLivePools, pools as bscTestnetPools } from './97'
-import { livePools as byteTestnetLivePools, pools as byteTestnetPools } from './1919'
+import { livePools as byteTestnetLivePools, pools as byteTestnetPools } from './11155111'
 
 import { SerializedPool } from '../../types'
 import { isPoolsSupported } from '../../utils/isPoolsSupported'
@@ -39,7 +39,7 @@ export const POOLS_CONFIG_BY_CHAIN = {
   [ChainId.POLYGON_ZKEVM]: polygonZkEvmPools,
   [ChainId.POLYGON_ZKEVM_TESTNET]: polygonZkEvmTestnetPools,
   [ChainId.OPBNB]: opBNBPools,
-  [ChainId.BYTE_TESTNET]: byteTestnetPools,
+  [ChainId.SEPOLIA]: byteTestnetPools,
 } as PoolsConfigByChain<SupportedChainId>
 
 export const LIVE_POOLS_CONFIG_BY_CHAIN = {
@@ -57,7 +57,7 @@ export const LIVE_POOLS_CONFIG_BY_CHAIN = {
   [ChainId.POLYGON_ZKEVM]: polygonZkEvmLivePools,
   [ChainId.POLYGON_ZKEVM_TESTNET]: polygonZkEvmTestnetLivePools,
   [ChainId.OPBNB]: opBNBLivePools,
-  [ChainId.BYTE_TESTNET]: byteTestnetLivePools,
+  [ChainId.SEPOLIA]: byteTestnetLivePools,
 } as PoolsConfigByChain<SupportedChainId>
 
 export const getPoolsConfig = (chainId: ChainId) => {

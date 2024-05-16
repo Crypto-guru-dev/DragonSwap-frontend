@@ -22,7 +22,7 @@ const useGelatoLimitOrdersLib = (): GelatoLimitOrders | undefined => {
       })
     },
     {
-      enabled: Boolean(chainId === ChainId.BYTE_TESTNET && connector),
+      enabled: Boolean(chainId === ChainId.SEPOLIA && connector),
       refetchOnReconnect: false,
       refetchOnWindowFocus: false,
     },

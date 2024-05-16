@@ -67,7 +67,7 @@ const StakeModalContainer = ({
   )
 
   const tokenImageUrl = useMemo(
-    () => (chainId ? `https://asset.byteswap.finance/images/${tokenImageChainNameMapping[chainId]}` : ''),
+    () => (chainId ? `https://assets.ryuswap.com/images/${tokenImageChainNameMapping[chainId]}` : ''),
     [chainId],
   )
 

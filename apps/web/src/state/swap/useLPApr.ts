@@ -45,7 +45,7 @@ export const useLPApr = (pair?: Pair | null) => {
       return lpApr7d ? { lpApr7d } : undefined
     },
     {
-      enabled: Boolean(pair && pair.chainId === ChainId.BYTE_TESTNET),
+      enabled: Boolean(pair && pair.chainId === ChainId.SEPOLIA),
       refetchInterval: SLOW_INTERVAL,
       refetchOnWindowFocus: false,
       refetchOnMount: false,
@@ -58,7 +58,7 @@ export const useLPApr = (pair?: Pair | null) => {
 const fetchPoolVolumeAndReserveData = async (
   block7d: number,
   poolAddress: string,
-  chainName: 'ETH' | 'BYTE_TESTNET' = 'BYTE_TESTNET',
+  chainName: 'ETH' | 'SEPOLIA' = 'SEPOLIA',
 ) => {
   try {
     const query = gql`

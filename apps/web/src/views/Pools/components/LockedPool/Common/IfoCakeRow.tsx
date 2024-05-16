@@ -25,7 +25,7 @@ const IfoCakeRow: React.FC<React.PropsWithChildren> = () => {
           },
         )}
       </Text>
-      <InlineLink external href="https://byteswap-help.gitbook.io/byteswap-document">
+      <InlineLink external href="https://ryuswap-help.gitbook.io/ryuswap-document">
         {t('Learn more')}
       </InlineLink>
     </Box>,

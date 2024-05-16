@@ -46,8 +46,8 @@ const useAllUserCampaignInfo = ({ campaignIds, type }: UseAllUserCampaignInfoPro
   const { address: account } = useAccount()
   const tradingRewardAddress =
     type === RewardType.CAKE_STAKERS
-      ? getTradingRewardAddress(ChainId.BYTE_TESTNET)
-      : getTradingRewardTopTradesAddress(ChainId.BYTE_TESTNET)
+      ? getTradingRewardAddress(ChainId.SEPOLIA)
+      : getTradingRewardTopTradesAddress(ChainId.SEPOLIA)
 
   const { data: allUserCampaignInfoData, isLoading } = useQuery(
     ['tradingReward', 'all-campaign-id-info', account, campaignIds, type],
@@ -96,7 +96,7 @@ const useAllUserCampaignInfo = ({ campaignIds, type }: UseAllUserCampaignInfoPro
                   } as const),
               )
 
-            const bscClient = publicClient({ chainId: ChainId.BYTE_TESTNET })
+            const bscClient = publicClient({ chainId: ChainId.SEPOLIA })
 
             const userClaimedIncentives = await bscClient.readContract({
               abi: tradingRewardABI,

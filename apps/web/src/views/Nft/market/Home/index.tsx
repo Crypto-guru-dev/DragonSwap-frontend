@@ -114,7 +114,7 @@ const Home = () => {
       )}
       <Gradient p="64px 0">
         <SectionsWithFoldableText header={t('FAQs')} config={config(t)} m="auto" />
-        <LinkExternal href="https://byteswap-help.gitbook.io/byteswap-document" mx="auto" mt="16px">
+        <LinkExternal href="https://ryuswap-help.gitbook.io/ryuswap-document" mx="auto" mt="16px">
           {t('Apply to NFT Marketplace!')}
         </LinkExternal>
       </Gradient>

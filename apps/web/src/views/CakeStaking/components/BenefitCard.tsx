@@ -71,7 +71,7 @@ export const BENEFITS: Record<BenefitCardType, BenefitItem> = {
       <Trans>Boost your earnings in fixed staking.</Trans>,
       <Trans>More to come...</Trans>,
     ],
-    link: 'https://byteswap-help.gitbook.io/byteswap-document',
+    link: 'https://ryuswap-help.gitbook.io/ryuswap-document',
     key: 'benefit-more',
   },
 }

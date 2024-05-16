@@ -33,7 +33,7 @@ const stableSwapAbi = [
 
 export async function fetchStableFarmData(
   farms: SerializedStableFarmConfig[],
-  chainId = ChainId.BYTE_TESTNET,
+  chainId = ChainId.SEPOLIA,
   provider: ({ chainId }: { chainId: number }) => PublicClient,
 ) {
   const calls = farms.flatMap(

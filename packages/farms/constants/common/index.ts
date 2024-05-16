@@ -57,7 +57,7 @@ export const priceHelperTokens = {
     chain: 'opbnb',
     list: [opBnbTokens.wbnb, opBnbTokens.usdt],
   },
-  [ChainId.BYTE_TESTNET]: {
+  [ChainId.SEPOLIA]: {
     chain: 'byteTestnet',
     list: [byteTestnetTokens.weth, byteTestnetTokens.usdt],
   },
@@ -87,7 +87,7 @@ export const DEFAULT_COMMON_PRICE: Record<FarmV3SupportedChainId, CommonPrice> =
   [ChainId.BASE]: {},
   [ChainId.OPBNB_TESTNET]: {},
   [ChainId.OPBNB]: {},
-  [ChainId.BYTE_TESTNET]: {
+  [ChainId.SEPOLIA]: {
     [byteTestnetTokens.usdt.address]: '1',
   },
 }

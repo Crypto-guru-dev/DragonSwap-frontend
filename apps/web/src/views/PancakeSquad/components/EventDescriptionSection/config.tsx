@@ -35,7 +35,7 @@ const eventDescriptionConfigBuilder = ({ t }: EventDescriptionType) => ({
     },
   ],
   primaryButton: {
-    to: 'https://byteswap-help.gitbook.io/byteswap-document',
+    to: 'https://ryuswap-help.gitbook.io/ryuswap-document',
     text: t('View Documentation'),
     external: true,
     isDisplayed: false,

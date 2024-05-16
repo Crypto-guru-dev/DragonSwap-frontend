@@ -41,7 +41,7 @@ const IfoContainer: React.FC<React.PropsWithChildren<TypeProps>> = ({
       <Container>
         <IfoQuestions />
         <LinkExternal
-          href="hhttps://byteswap-help.gitbook.io/byteswap-document"
+          href="hhttps://ryuswap-help.gitbook.io/ryuswap-document"
           mx="auto"
           mt="16px"
         >
